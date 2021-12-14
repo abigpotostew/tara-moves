@@ -1,3 +1,18 @@
 body {
-  background-color: lightblue;
+  background-color: black;
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+  overflow: hidden;
+
 }
+/*#sketch{*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
