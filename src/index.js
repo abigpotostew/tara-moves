@@ -1,5 +1,6 @@
 import p5 from 'p5';
 import {base58_to_binary} from 'base58-js'
+import {AnimatedSprite} from "./animated-sprite";
 
 
 // these are the variables you can use as inputs to your algorithms
@@ -26,14 +27,21 @@ const rng = splitHash(fxhash)
 // More about it in the guide, section features:
 // [https://fxhash.xyz/articles/guide-mint-generative-token#features]
 //
+const images = [
+    {name: 'amina-sm', count: 43},
+    {name: 'heno', count: 50},
+    {name: 'tararose', count: 30},
+]
 
-const numbIters = Math.floor(rng[4] / 2);
+const numbIters = Math.floor(rng[4] / 4);
 const primaryColor = [rng[4], rng[5], rng[6]]
 const secondaryColor = [rng[7], rng[8], rng[9]]
-const speed = Math.floor(rng[10] / 64 * 1000) / 1000
+const speed = 2 + Math.floor(rng[10] / 32 * 1000) / 1000
 const orbitRadius = Math.floor(rng[11] / 2);
 const octaves = Math.floor(rng[12] / 32) || 1 //0..8
 const octavesRange = rng.slice(13, 21)
+const numDancers = [Math.floor(fxrand() * 5) + 5, Math.floor(fxrand() * 5) + 5]
+// const dancerIdx = rng[21] % images.length
 
 window.$fxhashFeatures = {
     "Primary Color": '#' + primaryColor.map(p => p.toString(16).toUpperCase()).join(''),
@@ -42,6 +50,8 @@ window.$fxhashFeatures = {
     "Speed": speed,
     'Radius': orbitRadius,
     'Octaves': octaves,
+    // 'Dancer': images[dancerIdx].name,
+    'Dancers Count': numDancers,
 }
 
 console.log(window.$fxhashFeatures)
@@ -78,6 +88,17 @@ const motion = (p5, time, octaves) => {
 // `
 // document.body.append(container)
 
+const rand = (lo, hi) => {
+    if (!lo && !hi) return fxrand()
+    if (!hi && lo) {
+        return fxrand() * lo
+    }
+    return fxrand() * (hi - lo) + lo
+}
+const randInt = (lo, hi) => {
+    return Math.floor(rand(lo, hi))
+}
+
 const sketch = p5 => {
     // Variables scoped within p5
     // const d = new Star(500, 300, 4);
@@ -87,6 +108,19 @@ const sketch = p5 => {
 
     const border = 1.0;
 
+    let dancersSequence = [];
+    let loaded = false;
+    p5.preload = () => {
+        for (let image of images) {
+            const urlJson = `./packed/${image.name}.json`
+            const urlImage = `./packed/${image.name}.png`
+            const imageSheet = p5.loadImage(urlImage)
+            const jsonSheet = p5.loadJSON(urlJson)
+            image.imageSheet = imageSheet;
+            image.jsonSheet = jsonSheet;
+        }
+        loaded = true
+    }
 
     // Setup function
     // ======================================
@@ -94,6 +128,16 @@ const sketch = p5 => {
         let canvasSize = Math.floor(Math.min(p5.windowWidth, p5.windowHeight) * border);
         let canvas = p5.createCanvas(canvasSize, canvasSize);
         canvas.parent('sketch');
+        // dancersSequence = [...Array(numDancers[0]*numDancers[1]).keys()].map(i=>Math.floor(fxrand()*images.length)%images.length)
+        for (let i = 0; i < numDancers[0] * numDancers[1]; i++) {
+            const image = images[randInt(0, images.length)]
+            dancersSequence.push({
+                sprite: new AnimatedSprite(p5, image.imageSheet, image.jsonSheet, rand(.03333 * .5, .03333 * 2), randInt(0, 100))
+                , offset:p5.createVector(rand(0, 50)-rand(0, 50),rand(0, 50)-rand(0, 50))
+            })
+        }
+
+
     };
     // The sketch draw method
     p5.windowResized = () => {
@@ -118,6 +162,32 @@ const sketch = p5 => {
             p5.rect(p5.cos(time * speed + m) * orbitRadius * m * fi, p5.sin(time * speed + m) * orbitRadius * m * fi, p5.width - i / numbIters * p5.width)
         }
         p5.pop()
+
+        if (!loaded) {
+            console.log('loading')
+            return
+        }
+        let i = 0;
+        const danceFloorW = p5.width * .7 / numDancers[0]
+        const danceFloorH = p5.height * .7 / numDancers[1]
+        const danceFloorX = p5.width * .15
+        const danceFloorY = p5.height * .15
+        for (let x = 0; x < numDancers[0]; x++) {
+            for (let y = 0; y < numDancers[1]; y++) {
+                const data =dancersSequence[i++]
+
+                const sprite = data.sprite
+                const offset = data.offset
+                p5.push()
+                p5.translate(danceFloorX + x * danceFloorW + offset.x-270*.5,
+                    danceFloorY + y * danceFloorH + offset.y-270*.5)
+                sprite.render(p5.millis() / 1000,0,0
+                    )
+                p5.pop()
+
+            }
+        }
+
     };
 };
 

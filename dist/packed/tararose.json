@@ -1,0 +1,252 @@
+{"frames": [
+
+{
+	"filename": "tara rose_00000.png",
+	"frame": {"x":0,"y":0,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00001.png",
+	"frame": {"x":270,"y":0,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00002.png",
+	"frame": {"x":540,"y":0,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00003.png",
+	"frame": {"x":810,"y":0,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00004.png",
+	"frame": {"x":1080,"y":0,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00005.png",
+	"frame": {"x":1350,"y":0,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00006.png",
+	"frame": {"x":0,"y":270,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00007.png",
+	"frame": {"x":270,"y":270,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00008.png",
+	"frame": {"x":540,"y":270,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00009.png",
+	"frame": {"x":810,"y":270,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00010.png",
+	"frame": {"x":1080,"y":270,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00011.png",
+	"frame": {"x":1350,"y":270,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00012.png",
+	"frame": {"x":0,"y":540,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00013.png",
+	"frame": {"x":270,"y":540,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00014.png",
+	"frame": {"x":540,"y":540,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00015.png",
+	"frame": {"x":810,"y":540,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00016.png",
+	"frame": {"x":1080,"y":540,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00017.png",
+	"frame": {"x":1350,"y":540,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00018.png",
+	"frame": {"x":0,"y":810,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00019.png",
+	"frame": {"x":270,"y":810,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00020.png",
+	"frame": {"x":540,"y":810,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00021.png",
+	"frame": {"x":810,"y":810,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00022.png",
+	"frame": {"x":1080,"y":810,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00023.png",
+	"frame": {"x":1350,"y":810,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00024.png",
+	"frame": {"x":0,"y":1080,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00025.png",
+	"frame": {"x":270,"y":1080,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00026.png",
+	"frame": {"x":540,"y":1080,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00027.png",
+	"frame": {"x":810,"y":1080,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00028.png",
+	"frame": {"x":1080,"y":1080,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+},
+{
+	"filename": "tara rose_00029.png",
+	"frame": {"x":1350,"y":1080,"w":270,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":270,"h":270},
+	"sourceSize": {"w":270,"h":270}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tararose.png",
+	"format": "RGBA8888",
+	"size": {"w":1620,"h":1350},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:036813a991898c49d6db12abb30eead9:9bf27711a27545835601295ecc3224d7:f29bea2e21f8c5bb732e632d3de7644e$"
+}
+}
