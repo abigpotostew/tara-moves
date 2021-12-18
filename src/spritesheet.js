@@ -32,9 +32,10 @@ export const splitMultipackSheet = (p5, images, jsonSheets) => {
             const yOffset = frame.frame.y;
             const w = frame.frame.w;
             const h = frame.frame.h;
-            const img  = p5.createGraphics(w, h);
-            img.copy(jsonSheet.image, xOffset, yOffset, w, h, 0, 0, w, h);
-            frame.image = img;//jsonSheet.image
+            // const img  = p5.createGraphics(w, h);
+            // img.copy(jsonSheet.image, xOffset, yOffset, w, h, 0, 0, w, h);
+            // frame.image = img;//jsonSheet.image
+            frame.image = jsonSheet.image
             allframes.push(frame)
         }
     }
