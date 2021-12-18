@@ -1,6 +1,7 @@
 import p5 from 'p5';
 import {base58_to_binary} from 'base58-js'
 import {AnimatedSprite} from "./animated-sprite";
+import {loadMultipack, splitMultipackSheet} from "./spritesheet";
 
 
 // these are the variables you can use as inputs to your algorithms
@@ -27,10 +28,11 @@ const rng = splitHash(fxhash)
 // More about it in the guide, section features:
 // [https://fxhash.xyz/articles/guide-mint-generative-token#features]
 //
+const sheets = ['all-0','all-1']
 const images = [
-    {name: 'amina-sm', count: 43},
+    {name: 'amina', count: 43},
     {name: 'heno', count: 50},
-    {name: 'tararose', count: 30},
+    {name: 'tara rose', count: 30},
 ]
 
 const numbIters = Math.floor(rng[4] / 4);
@@ -110,29 +112,26 @@ const sketch = p5 => {
 
     let dancersSequence = [];
     let loaded = false;
+let sheets = [];
+let tintShader;
     p5.preload = () => {
-        for (let image of images) {
-            const urlJson = `./packed/${image.name}.json`
-            const urlImage = `./packed/${image.name}.png`
-            const imageSheet = p5.loadImage(urlImage)
-            const jsonSheet = p5.loadJSON(urlJson)
-            image.imageSheet = imageSheet;
-            image.jsonSheet = jsonSheet;
-        }
-        loaded = true
+        sheets= loadMultipack(p5, ['all-0','all-1'], `./packed`)
+        tintShader = p5.loadShader('./shader/default.vert', './shader/tint.frag');
     }
 
     // Setup function
     // ======================================
     p5.setup = () => {
         let canvasSize = Math.floor(Math.min(p5.windowWidth, p5.windowHeight) * border);
-        let canvas = p5.createCanvas(canvasSize, canvasSize);
+        let canvas = p5.createCanvas(canvasSize, canvasSize, p5.WEBGL);
+        // canvas.drawingContext.disable(canvas.drawingContext.DEPTH_TEST);
+
         canvas.parent('sketch');
-        // dancersSequence = [...Array(numDancers[0]*numDancers[1]).keys()].map(i=>Math.floor(fxrand()*images.length)%images.length)
+        splitMultipackSheet(p5,images, sheets)
         for (let i = 0; i < numDancers[0] * numDancers[1]; i++) {
             const image = images[randInt(0, images.length)]
             dancersSequence.push({
-                sprite: new AnimatedSprite(p5, image.imageSheet, image.jsonSheet, rand(.03333 * .5, .03333 * 2), randInt(0, 100))
+                sprite: new AnimatedSprite(p5, image.frames, rand(.03333 * 2, .03333 * 5), randInt(0, 100))
                 , offset:p5.createVector(rand(0, 50)-rand(0, 50),rand(0, 50)-rand(0, 50))
             })
         }
@@ -148,6 +147,8 @@ const sketch = p5 => {
     // Draw function
     // ======================================
     p5.draw = () => {
+        p5.push()
+        p5.translate(-p5.width/2,-p5.height/2,0);
         p5.background(rng[3]);
         const primaryCol = p5.color(...primaryColor)
         const secondaryCol = p5.color(...secondaryColor)
@@ -163,15 +164,13 @@ const sketch = p5 => {
         }
         p5.pop()
 
-        if (!loaded) {
-            console.log('loading')
-            return
-        }
+
         let i = 0;
         const danceFloorW = p5.width * .7 / numDancers[0]
         const danceFloorH = p5.height * .7 / numDancers[1]
         const danceFloorX = p5.width * .15
         const danceFloorY = p5.height * .15
+
         for (let x = 0; x < numDancers[0]; x++) {
             for (let y = 0; y < numDancers[1]; y++) {
                 const data =dancersSequence[i++]
@@ -181,13 +180,19 @@ const sketch = p5 => {
                 p5.push()
                 p5.translate(danceFloorX + x * danceFloorW + offset.x-270*.5,
                     danceFloorY + y * danceFloorH + offset.y-270*.5)
-                sprite.render(p5.millis() / 1000,0,0
+
+
+
+                sprite.render(p5.millis() / 1000,0,0,
+                    undefined,undefined,tintShader
                     )
+
+
                 p5.pop()
 
             }
         }
-
+        p5.pop()
     };
 };
 

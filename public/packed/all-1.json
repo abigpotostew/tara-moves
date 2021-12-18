@@ -1,465 +1,137 @@
 {"frames": [
 
 {
-	"filename": "amina_00003.png",
-	"frame": {"x":949,"y":1,"w":222,"h":472},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":143,"y":40,"w":222,"h":472},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00004.png",
-	"frame": {"x":949,"y":1,"w":222,"h":472},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":143,"y":40,"w":222,"h":472},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00005.png",
-	"frame": {"x":1,"y":1,"w":213,"h":472},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":40,"w":213,"h":472},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00006.png",
-	"frame": {"x":1,"y":1,"w":213,"h":472},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":40,"w":213,"h":472},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00007.png",
-	"frame": {"x":1,"y":1,"w":213,"h":472},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":40,"w":213,"h":472},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00008.png",
-	"frame": {"x":475,"y":1,"w":213,"h":472},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":40,"w":213,"h":472},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00009.png",
-	"frame": {"x":475,"y":1,"w":213,"h":472},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":40,"w":213,"h":472},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00015.png",
-	"frame": {"x":1391,"y":235,"w":238,"h":486},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":26,"w":238,"h":486},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00016.png",
-	"frame": {"x":1391,"y":235,"w":238,"h":486},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":26,"w":238,"h":486},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00017.png",
-	"frame": {"x":1391,"y":235,"w":238,"h":486},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":26,"w":238,"h":486},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00018.png",
-	"frame": {"x":1,"y":216,"w":236,"h":489},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":23,"w":236,"h":489},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00019.png",
-	"frame": {"x":1,"y":216,"w":236,"h":489},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":23,"w":236,"h":489},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00023.png",
-	"frame": {"x":1423,"y":1,"w":232,"h":482},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":30,"w":232,"h":482},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00024.png",
-	"frame": {"x":1423,"y":1,"w":232,"h":482},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":152,"y":30,"w":232,"h":482},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00033.png",
-	"frame": {"x":1434,"y":1007,"w":277,"h":482},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":107,"y":30,"w":277,"h":482},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00034.png",
-	"frame": {"x":1434,"y":1007,"w":277,"h":482},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":107,"y":30,"w":277,"h":482},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00040.png",
-	"frame": {"x":941,"y":1007,"w":271,"h":491},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":113,"y":21,"w":271,"h":491},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00041.png",
-	"frame": {"x":941,"y":1007,"w":271,"h":491},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":113,"y":21,"w":271,"h":491},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "amina_00042.png",
-	"frame": {"x":941,"y":1007,"w":271,"h":491},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":113,"y":21,"w":271,"h":491},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00003.png",
-	"frame": {"x":492,"y":216,"w":244,"h":443},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":67,"w":244,"h":443},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00004.png",
-	"frame": {"x":492,"y":216,"w":244,"h":443},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":67,"w":244,"h":443},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00005.png",
-	"frame": {"x":937,"y":225,"w":244,"h":452},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":69,"w":244,"h":452},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00006.png",
-	"frame": {"x":937,"y":225,"w":244,"h":452},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":69,"w":244,"h":452},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00007.png",
-	"frame": {"x":937,"y":225,"w":244,"h":452},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":69,"w":244,"h":452},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00020.png",
-	"frame": {"x":1,"y":720,"w":269,"h":475},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":475},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00021.png",
-	"frame": {"x":1,"y":720,"w":269,"h":475},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":475},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00022.png",
-	"frame": {"x":1,"y":720,"w":269,"h":475},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":475},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00023.png",
-	"frame": {"x":478,"y":730,"w":269,"h":475},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":475},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00024.png",
-	"frame": {"x":478,"y":730,"w":269,"h":475},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":475},
-	"sourceSize": {"w":540,"h":540}
-},
-{
 	"filename": "heno_00025.png",
-	"frame": {"x":955,"y":736,"w":269,"h":471},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":471},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00026.png",
-	"frame": {"x":955,"y":736,"w":269,"h":471},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":471},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00027.png",
-	"frame": {"x":955,"y":736,"w":269,"h":471},
-	"rotated": true,
+	"frame": {"x":852,"y":1,"w":269,"h":471},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":471},
 	"sourceSize": {"w":540,"h":540}
 },
 {
 	"filename": "heno_00028.png",
-	"frame": {"x":1428,"y":736,"w":269,"h":471},
-	"rotated": true,
+	"frame": {"x":566,"y":474,"w":269,"h":471},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":471},
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "heno_00029.png",
-	"frame": {"x":1428,"y":736,"w":269,"h":471},
-	"rotated": true,
+	"filename": "heno_00030.png",
+	"frame": {"x":837,"y":474,"w":269,"h":471},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":164,"y":46,"w":269,"h":471},
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "heno_00033.png",
-	"frame": {"x":474,"y":1280,"w":288,"h":471},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":145,"y":46,"w":288,"h":471},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00034.png",
-	"frame": {"x":474,"y":1280,"w":288,"h":471},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":145,"y":46,"w":288,"h":471},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00043.png",
-	"frame": {"x":1420,"y":1286,"w":293,"h":471},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":140,"y":46,"w":293,"h":471},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00044.png",
-	"frame": {"x":1420,"y":1286,"w":293,"h":471},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":140,"y":46,"w":293,"h":471},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00045.png",
-	"frame": {"x":947,"y":1280,"w":289,"h":471},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":144,"y":46,"w":289,"h":471},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00046.png",
-	"frame": {"x":947,"y":1280,"w":289,"h":471},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":144,"y":46,"w":289,"h":471},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00047.png",
-	"frame": {"x":947,"y":1280,"w":289,"h":471},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":144,"y":46,"w":289,"h":471},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "heno_00048.png",
-	"frame": {"x":1,"y":1279,"w":285,"h":471},
-	"rotated": true,
+	"filename": "heno_00035.png",
+	"frame": {"x":1,"y":1,"w":285,"h":471},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":148,"y":46,"w":285,"h":471},
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "heno_00049.png",
-	"frame": {"x":1,"y":1279,"w":285,"h":471},
-	"rotated": true,
+	"filename": "heno_00038.png",
+	"frame": {"x":1,"y":474,"w":285,"h":471},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":148,"y":46,"w":285,"h":471},
+	"sourceSize": {"w":540,"h":540}
+},
+{
+	"filename": "heno_00040.png",
+	"frame": {"x":288,"y":1,"w":285,"h":471},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":148,"y":46,"w":285,"h":471},
+	"sourceSize": {"w":540,"h":540}
+},
+{
+	"filename": "tara rose_00000.png",
+	"frame": {"x":212,"y":1417,"w":204,"h":456},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":182,"y":34,"w":204,"h":456},
+	"sourceSize": {"w":540,"h":540}
+},
+{
+	"filename": "tara rose_00004.png",
+	"frame": {"x":1,"y":1417,"w":209,"h":457},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":177,"y":33,"w":209,"h":457},
 	"sourceSize": {"w":540,"h":540}
 },
 {
 	"filename": "tara rose_00008.png",
-	"frame": {"x":1391,"y":475,"w":259,"h":461},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":134,"y":30,"w":259,"h":461},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "tara rose_00009.png",
-	"frame": {"x":1391,"y":475,"w":259,"h":461},
-	"rotated": true,
+	"frame": {"x":799,"y":947,"w":259,"h":461},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":134,"y":30,"w":259,"h":461},
 	"sourceSize": {"w":540,"h":540}
 },
 {
 	"filename": "tara rose_00010.png",
-	"frame": {"x":929,"y":471,"w":257,"h":460},
-	"rotated": true,
+	"frame": {"x":676,"y":1410,"w":257,"h":460},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":129,"y":30,"w":257,"h":460},
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "tara rose_00011.png",
-	"frame": {"x":929,"y":471,"w":257,"h":460},
-	"rotated": true,
+	"filename": "tara rose_00013.png",
+	"frame": {"x":537,"y":947,"w":260,"h":461},
+	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":129,"y":30,"w":257,"h":460},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "tara rose_00012.png",
-	"frame": {"x":929,"y":471,"w":257,"h":460},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":129,"y":30,"w":257,"h":460},
+	"spriteSourceSize": {"x":126,"y":30,"w":260,"h":461},
 	"sourceSize": {"w":540,"h":540}
 },
 {
 	"filename": "tara rose_00015.png",
-	"frame": {"x":466,"y":462,"w":256,"h":461},
-	"rotated": true,
+	"frame": {"x":418,"y":1412,"w":256,"h":461},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":130,"y":30,"w":256,"h":461},
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "tara rose_00016.png",
-	"frame": {"x":466,"y":462,"w":256,"h":461},
-	"rotated": true,
+	"filename": "tara rose_00018.png",
+	"frame": {"x":935,"y":1410,"w":252,"h":461},
+	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":130,"y":30,"w":256,"h":461},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "tara rose_00017.png",
-	"frame": {"x":466,"y":462,"w":256,"h":461},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":130,"y":30,"w":256,"h":461},
+	"spriteSourceSize": {"x":134,"y":30,"w":252,"h":461},
 	"sourceSize": {"w":540,"h":540}
 },
 {
 	"filename": "tara rose_00020.png",
-	"frame": {"x":1,"y":454,"w":252,"h":463},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":134,"y":30,"w":252,"h":463},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "tara rose_00021.png",
-	"frame": {"x":1,"y":454,"w":252,"h":463},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":134,"y":30,"w":252,"h":463},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "tara rose_00022.png",
-	"frame": {"x":1,"y":454,"w":252,"h":463},
-	"rotated": true,
+	"frame": {"x":283,"y":947,"w":252,"h":463},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":134,"y":30,"w":252,"h":463},
 	"sourceSize": {"w":540,"h":540}
 },
 {
 	"filename": "tara rose_00023.png",
-	"frame": {"x":1,"y":991,"w":275,"h":468},
-	"rotated": true,
+	"frame": {"x":575,"y":1,"w":275,"h":468},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":134,"y":30,"w":275,"h":468},
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "tara rose_00024.png",
-	"frame": {"x":1,"y":991,"w":275,"h":468},
-	"rotated": true,
+	"filename": "tara rose_00025.png",
+	"frame": {"x":1,"y":947,"w":280,"h":468},
+	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":134,"y":30,"w":275,"h":468},
+	"spriteSourceSize": {"x":134,"y":30,"w":280,"h":468},
 	"sourceSize": {"w":540,"h":540}
 },
 {
 	"filename": "tara rose_00028.png",
-	"frame": {"x":471,"y":1001,"w":276,"h":468},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":134,"y":30,"w":276,"h":468},
-	"sourceSize": {"w":540,"h":540}
-},
-{
-	"filename": "tara rose_00029.png",
-	"frame": {"x":471,"y":1001,"w":276,"h":468},
-	"rotated": true,
+	"frame": {"x":288,"y":474,"w":276,"h":468},
+	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":134,"y":30,"w":276,"h":468},
 	"sourceSize": {"w":540,"h":540}
@@ -469,9 +141,9 @@
 	"version": "1.0",
 	"image": "all-1.png",
 	"format": "RGBA8888",
-	"size": {"w":1917,"h":1580},
+	"size": {"w":1188,"h":1875},
 	"scale": "0.5",
 	"related_multi_packs": [ "all-0.json" ],
-	"smartupdate": "$TexturePacker:SmartUpdate:a815a374293df71a4915f36fd02f288f:78e05c36051391fedeb7092c63dba85b:a9f576a175b1495603861082bf88b0e2$"
+	"smartupdate": "$TexturePacker:SmartUpdate:a33510d1ff85b97f76c2a4277bc629c7:6c15387b4117dd3961da14acc1fd0edc:a9f576a175b1495603861082bf88b0e2$"
 }
 }

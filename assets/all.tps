@@ -26,7 +26,7 @@
             </struct>
         </array>
         <key>allowRotation</key>
-        <true/>
+        <false/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
@@ -186,128 +186,53 @@
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
             <key type="filename">raw/amina/amina_00000.png</key>
-            <key type="filename">raw/amina/amina_00001.png</key>
-            <key type="filename">raw/amina/amina_00002.png</key>
             <key type="filename">raw/amina/amina_00003.png</key>
-            <key type="filename">raw/amina/amina_00004.png</key>
             <key type="filename">raw/amina/amina_00005.png</key>
-            <key type="filename">raw/amina/amina_00006.png</key>
-            <key type="filename">raw/amina/amina_00007.png</key>
             <key type="filename">raw/amina/amina_00008.png</key>
-            <key type="filename">raw/amina/amina_00009.png</key>
             <key type="filename">raw/amina/amina_00010.png</key>
-            <key type="filename">raw/amina/amina_00011.png</key>
-            <key type="filename">raw/amina/amina_00012.png</key>
             <key type="filename">raw/amina/amina_00013.png</key>
-            <key type="filename">raw/amina/amina_00014.png</key>
             <key type="filename">raw/amina/amina_00015.png</key>
-            <key type="filename">raw/amina/amina_00016.png</key>
-            <key type="filename">raw/amina/amina_00017.png</key>
             <key type="filename">raw/amina/amina_00018.png</key>
-            <key type="filename">raw/amina/amina_00019.png</key>
             <key type="filename">raw/amina/amina_00020.png</key>
-            <key type="filename">raw/amina/amina_00021.png</key>
-            <key type="filename">raw/amina/amina_00022.png</key>
             <key type="filename">raw/amina/amina_00023.png</key>
-            <key type="filename">raw/amina/amina_00024.png</key>
             <key type="filename">raw/amina/amina_00025.png</key>
-            <key type="filename">raw/amina/amina_00026.png</key>
-            <key type="filename">raw/amina/amina_00027.png</key>
             <key type="filename">raw/amina/amina_00028.png</key>
-            <key type="filename">raw/amina/amina_00029.png</key>
             <key type="filename">raw/amina/amina_00030.png</key>
-            <key type="filename">raw/amina/amina_00031.png</key>
-            <key type="filename">raw/amina/amina_00032.png</key>
             <key type="filename">raw/amina/amina_00033.png</key>
-            <key type="filename">raw/amina/amina_00034.png</key>
             <key type="filename">raw/amina/amina_00035.png</key>
-            <key type="filename">raw/amina/amina_00036.png</key>
-            <key type="filename">raw/amina/amina_00037.png</key>
             <key type="filename">raw/amina/amina_00038.png</key>
-            <key type="filename">raw/amina/amina_00039.png</key>
             <key type="filename">raw/amina/amina_00040.png</key>
-            <key type="filename">raw/amina/amina_00041.png</key>
-            <key type="filename">raw/amina/amina_00042.png</key>
             <key type="filename">raw/heno/heno_00000.png</key>
-            <key type="filename">raw/heno/heno_00001.png</key>
-            <key type="filename">raw/heno/heno_00002.png</key>
             <key type="filename">raw/heno/heno_00003.png</key>
-            <key type="filename">raw/heno/heno_00004.png</key>
             <key type="filename">raw/heno/heno_00005.png</key>
-            <key type="filename">raw/heno/heno_00006.png</key>
-            <key type="filename">raw/heno/heno_00007.png</key>
             <key type="filename">raw/heno/heno_00008.png</key>
-            <key type="filename">raw/heno/heno_00009.png</key>
             <key type="filename">raw/heno/heno_00010.png</key>
-            <key type="filename">raw/heno/heno_00011.png</key>
-            <key type="filename">raw/heno/heno_00012.png</key>
             <key type="filename">raw/heno/heno_00013.png</key>
-            <key type="filename">raw/heno/heno_00014.png</key>
             <key type="filename">raw/heno/heno_00015.png</key>
-            <key type="filename">raw/heno/heno_00016.png</key>
-            <key type="filename">raw/heno/heno_00017.png</key>
             <key type="filename">raw/heno/heno_00018.png</key>
-            <key type="filename">raw/heno/heno_00019.png</key>
             <key type="filename">raw/heno/heno_00020.png</key>
-            <key type="filename">raw/heno/heno_00021.png</key>
-            <key type="filename">raw/heno/heno_00022.png</key>
             <key type="filename">raw/heno/heno_00023.png</key>
-            <key type="filename">raw/heno/heno_00024.png</key>
             <key type="filename">raw/heno/heno_00025.png</key>
-            <key type="filename">raw/heno/heno_00026.png</key>
-            <key type="filename">raw/heno/heno_00027.png</key>
             <key type="filename">raw/heno/heno_00028.png</key>
-            <key type="filename">raw/heno/heno_00029.png</key>
             <key type="filename">raw/heno/heno_00030.png</key>
-            <key type="filename">raw/heno/heno_00031.png</key>
-            <key type="filename">raw/heno/heno_00032.png</key>
             <key type="filename">raw/heno/heno_00033.png</key>
-            <key type="filename">raw/heno/heno_00034.png</key>
             <key type="filename">raw/heno/heno_00035.png</key>
-            <key type="filename">raw/heno/heno_00036.png</key>
-            <key type="filename">raw/heno/heno_00037.png</key>
             <key type="filename">raw/heno/heno_00038.png</key>
-            <key type="filename">raw/heno/heno_00039.png</key>
             <key type="filename">raw/heno/heno_00040.png</key>
-            <key type="filename">raw/heno/heno_00041.png</key>
-            <key type="filename">raw/heno/heno_00042.png</key>
             <key type="filename">raw/heno/heno_00043.png</key>
-            <key type="filename">raw/heno/heno_00044.png</key>
             <key type="filename">raw/heno/heno_00045.png</key>
-            <key type="filename">raw/heno/heno_00046.png</key>
-            <key type="filename">raw/heno/heno_00047.png</key>
-            <key type="filename">raw/heno/heno_00048.png</key>
-            <key type="filename">raw/heno/heno_00049.png</key>
             <key type="filename">raw/tara rose/tara rose_00000.png</key>
-            <key type="filename">raw/tara rose/tara rose_00001.png</key>
-            <key type="filename">raw/tara rose/tara rose_00002.png</key>
-            <key type="filename">raw/tara rose/tara rose_00003.png</key>
             <key type="filename">raw/tara rose/tara rose_00004.png</key>
             <key type="filename">raw/tara rose/tara rose_00005.png</key>
-            <key type="filename">raw/tara rose/tara rose_00006.png</key>
-            <key type="filename">raw/tara rose/tara rose_00007.png</key>
             <key type="filename">raw/tara rose/tara rose_00008.png</key>
-            <key type="filename">raw/tara rose/tara rose_00009.png</key>
             <key type="filename">raw/tara rose/tara rose_00010.png</key>
-            <key type="filename">raw/tara rose/tara rose_00011.png</key>
-            <key type="filename">raw/tara rose/tara rose_00012.png</key>
             <key type="filename">raw/tara rose/tara rose_00013.png</key>
-            <key type="filename">raw/tara rose/tara rose_00014.png</key>
             <key type="filename">raw/tara rose/tara rose_00015.png</key>
-            <key type="filename">raw/tara rose/tara rose_00016.png</key>
-            <key type="filename">raw/tara rose/tara rose_00017.png</key>
             <key type="filename">raw/tara rose/tara rose_00018.png</key>
-            <key type="filename">raw/tara rose/tara rose_00019.png</key>
             <key type="filename">raw/tara rose/tara rose_00020.png</key>
-            <key type="filename">raw/tara rose/tara rose_00021.png</key>
-            <key type="filename">raw/tara rose/tara rose_00022.png</key>
             <key type="filename">raw/tara rose/tara rose_00023.png</key>
-            <key type="filename">raw/tara rose/tara rose_00024.png</key>
             <key type="filename">raw/tara rose/tara rose_00025.png</key>
-            <key type="filename">raw/tara rose/tara rose_00026.png</key>
-            <key type="filename">raw/tara rose/tara rose_00027.png</key>
             <key type="filename">raw/tara rose/tara rose_00028.png</key>
-            <key type="filename">raw/tara rose/tara rose_00029.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
