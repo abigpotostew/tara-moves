@@ -126,12 +126,14 @@ let tintShader;
         let canvas = p5.createCanvas(canvasSize, canvasSize, p5.WEBGL);
         // canvas.drawingContext.disable(canvas.drawingContext.DEPTH_TEST);
 
+        let buffer = p5.createGraphics(100,100, p5.WEBGL)
+
         canvas.parent('sketch');
         splitMultipackSheet(p5,images, sheets)
         for (let i = 0; i < numDancers[0] * numDancers[1]; i++) {
             const image = images[randInt(0, images.length)]
             dancersSequence.push({
-                sprite: new AnimatedSprite(p5, image.frames, rand(.03333 * 2, .03333 * 5), randInt(0, 100))
+                sprite: new AnimatedSprite(p5, image.frames, rand(.03333 * 2, .03333 * 5), randInt(0, 100),buffer)
                 , offset:p5.createVector(rand(0, 50)-rand(0, 50),rand(0, 50)-rand(0, 50))
             })
         }
