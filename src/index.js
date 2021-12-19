@@ -3,6 +3,9 @@ import {base58_to_binary} from 'base58-js'
 import {AnimatedSprite} from "./animated-sprite";
 import {loadMultipack, splitMultipackSheet} from "./spritesheet";
 import {timer} from "./timer";
+import * as dat from 'dat.gui';
+import {hslToRgb} from "./color";
+
 
 
 // these are the variables you can use as inputs to your algorithms
@@ -129,6 +132,23 @@ const sketch = p5 => {
         tintShader = p5.loadShader('./shader/default.vert', './shader/tint.frag');
     }
 
+    let settingsDef = {
+        name    : 'MovesGen!',
+        override:false,
+        border: { h: p5.random(0,360), s: 0.9, v: 0.3 },
+        fill: { h: p5.random(0,360), s: 0.9, v: 0.3 },
+        // da      : 1.0,
+        // db      : 0.6,
+        // feed    : 0.04,
+        // kill    : 0.06,
+        // dt      : 1.0,
+        // iter    : 10,
+        // reset   : initRD,
+
+        // preset0 : function() {  this.feed = 0.040; this.kill = 0.060; this.da = 1.00; this.db = 0.60; },
+    };
+
+
     // Setup function
     // ======================================
     p5.setup = () => {
@@ -154,6 +174,14 @@ const sketch = p5 => {
 
 
         document.getElementById('debug').innerText = fxhash;
+
+        var gui = new dat.GUI();
+        gui.add(settingsDef, 'name');
+        gui.add(settingsDef, 'override'  )
+        gui.addColor(settingsDef, 'fill'   )
+        gui.addColor(settingsDef, 'border'   )
+
+        // gui.add(rdDef, 'preset0');
     };
     // The sketch draw method
     p5.windowResized = () => {
@@ -208,9 +236,25 @@ const sketch = p5 => {
 
                 //todo do this in a spiral!!
 
-                sprite.render(p5.millis() / 1000, 0, 0,
-                    dancerImageWidth,dancerImageWidth, tintShader
-                )
+                if(settingsDef.override){
+                    const border = sprite.borderColor
+                    const fill = sprite.fillColor
+                    sprite.borderColor = hslToRgb(settingsDef.border.h/360,settingsDef.border.s,settingsDef.border.v, 1)
+                    sprite.fillColor = hslToRgb(settingsDef.fill.h/360,settingsDef.fill.s,settingsDef.fill.v, 1)
+                    sprite.render(p5.millis() / 1000, 0, 0,
+                        dancerImageWidth,dancerImageWidth, tintShader
+                    )
+                    sprite.borderColor = border
+                    sprite.fillColor = fill
+                }else{
+                    sprite.render(p5.millis() / 1000, 0, 0,
+                        dancerImageWidth,dancerImageWidth, tintShader
+                    )
+                }
+
+
+
+
                 p5.pop()
             }
         }

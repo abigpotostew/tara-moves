@@ -12,9 +12,9 @@
     "deploy": "gh-pages -d dist"
   },
   "homepage": "http://abigpotostew.github.io/tara-moves",
-
   "dependencies": {
     "base58-js": "^1.0.0",
+    "dat.gui": "^0.7.7",
     "p5": "^1.4.0"
   },
   "devDependencies": {
