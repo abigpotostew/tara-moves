@@ -4,8 +4,7 @@ import {AnimatedSprite} from "./animated-sprite";
 import {loadMultipack, splitMultipackSheet} from "./spritesheet";
 import {timer} from "./timer";
 import * as dat from 'dat.gui';
-import {hslToRgb} from "./color";
-
+import {hslToRgb, rgbToHsl} from "./color";
 
 
 // these are the variables you can use as inputs to your algorithms
@@ -46,7 +45,7 @@ const speed = 2 + Math.floor(rng[10] / 32 * 1000) / 1000
 const orbitRadius = Math.floor(rng[11] / 2);
 const octaves = Math.floor(rng[12] / 32) || 1 //0..8
 const octavesRange = rng.slice(13, 21)
-const numDancers = [Math.floor(fxrand() * 3) + 3, Math.floor(fxrand() * 3) + 3]
+const numDancers = Math.floor(fxrand() * 30) + 6
 // const dancerColors = images
 //
 // const dancerColorsFunc = (sheetFrame)=>{
@@ -57,6 +56,14 @@ const numDancers = [Math.floor(fxrand() * 3) + 3, Math.floor(fxrand() * 3) + 3]
 
 // const dancerIdx = rng[21] % images.length
 
+
+/*
+ *Rarity ideas:
+ * color modes: rainbow mode, random mode, pallete mode
+ * num dancers: have different number based on rarity buckets, ie huge crowd is more rare, single dancer is very rare.
+ *g
+ *
+ */
 window.$fxhashFeatures = {
     "Primary Color": '#' + primaryColor.map(p => p.toString(16).toUpperCase()).join(''),
     "Secondary Color": '#' + secondaryColor.map(p => p.toString(16).toUpperCase()).join(''),
@@ -133,10 +140,10 @@ const sketch = p5 => {
     }
 
     let settingsDef = {
-        name    : 'MovesGen!',
-        override:false,
-        border: { h: p5.random(0,360), s: 0.9, v: 0.3 },
-        fill: { h: p5.random(0,360), s: 0.9, v: 0.3 },
+        name: 'MovesGen!',
+        override: false,
+        border: {h: p5.random(0, 360), s: 0.9, v: 0.3},
+        fill: {h: p5.random(0, 360), s: 0.9, v: 0.3},
         // da      : 1.0,
         // db      : 0.6,
         // feed    : 0.04,
@@ -156,30 +163,49 @@ const sketch = p5 => {
         let canvas = p5.createCanvas(canvasSize, canvasSize, p5.WEBGL);
         canvas.drawingContext.disable(canvas.drawingContext.DEPTH_TEST);
 
+        const getDancerPosition=()=>{
+            let colliding = false;
+            let position
+            do {
+                 position = p5.createVector(rand(.15,.85),rand(.25,.75))
+                colliding = dancersSequence.some(dancer => dancer.position.dist(position) < .05)
+            } while (colliding)
+            return position;
+        }
 
         canvas.parent('sketch');
         splitMultipackSheet(p5, images, sheets, tintShader)
-        for (let i = 0; i < numDancers[0] * numDancers[1]; i++) {
+        for (let i = 0; i < numDancers; i++) {
             const image = images[randInt(0, images.length)]
             const borderColor = [rand(), rand(), rand()]
             const fillColor = [rand(), rand(), rand()]
+            console.log('dancer', i, 'fill:', rgbToHsl(fillColor[0], fillColor[1], fillColor[2], 1, 360),
+                'border:', rgbToHsl(borderColor[0], borderColor[1], borderColor[2], 1, 360)
+
+                // 'border:', rgbToHsl(borderColor[0], borderColor[1], borderColor[2], 1, 360))
+            )
+
+
+
             dancersSequence.push({
                 sprite: new AnimatedSprite(p5, image.frames, rand(.03333 * 2, .03333 * 5), randInt(0, 100), {
                     borderColor,
                     fillColor
                 }),
-                offset: p5.createVector(rand(0, 50) - rand(0, 50), rand(0, 50) - rand(0, 50))
+                offset: p5.createVector(rand(0, 50) - rand(0, 50), rand(0, 50) - rand(0, 50)),
+                position: getDancerPosition()
             })
         }
+        dancersSequence.sort((a, b) => (a.position.x*a.position.y + a.position.y)  -  (b.position.x*b.position.y + b.position.y))
 
 
         document.getElementById('debug').innerText = fxhash;
 
         var gui = new dat.GUI();
         gui.add(settingsDef, 'name');
-        gui.add(settingsDef, 'override'  )
-        gui.addColor(settingsDef, 'fill'   )
-        gui.addColor(settingsDef, 'border'   )
+        gui.add(settingsDef, 'override')
+        gui.addColor(settingsDef, 'fill')
+        gui.addColor(settingsDef, 'border')
 
         // gui.add(rdDef, 'preset0');
     };
@@ -210,83 +236,87 @@ const sketch = p5 => {
         p5.pop()
 
 
-        const ratio = 540/1400
-        const visualRatio = ratio*.5
-        const dancerImageWidth = p5.width*ratio
-        const dancerImageWidthVisual = p5.width*visualRatio
-        const danceFloorW = (p5.width * .7 )/ numDancers[0]
-        const danceFloorH = (p5.height * .7 ) / numDancers[1]
+        const ratio = 540 / 1400
+        const visualRatio = ratio * .5
+        const dancerImageWidth = p5.width * ratio
+        const dancerImageWidthVisual = p5.width * visualRatio
+        const danceFloorW = (p5.width * .7) / numDancers
+        const danceFloorH = (p5.height * .7) / numDancers
         const danceFloorX = p5.width * .15
         const danceFloorY = p5.height * .15
 
 
         let i = 0;
-        for (let x = 0; x < numDancers[0]; x++) {
-            for (let y = 0; y < numDancers[1]; y++) {
-                const data = dancersSequence[i++]
+
+        for (let data of dancersSequence) {
+        //
+        // }
+        // for (let x = 0; x < numDancers[0]; x++) {
+        //     for (let y = 0; y < numDancers[1]; y++) {
+        //         const data = dancersSequence[i++]
 
                 const sprite = data.sprite
                 const offset = data.offset
-                const xi = x/numDancers[0]
-                const yi = y/numDancers[1]
+                const position = data.position
+                // const xi = x / numDancers[0]
+                // const yi = y / numDancers[1]
                 p5.push()
                 p5.imageMode(p5.CENTER)
-                p5.translate(danceFloorX + x * danceFloorW  + dancerImageWidthVisual*(xi+1)*.5 ,
-                    danceFloorY + y * danceFloorH + dancerImageWidthVisual*(yi+1)*.5)
+                // const xPos = danceFloorX + x * danceFloorW + dancerImageWidthVisual * (xi + 1) * .5
+                // const yPos =  danceFloorY + y * danceFloorH + dancerImageWidthVisual * (yi + 1) * .5
+                const xPos = position.x * p5.width
+                const yPos = position.y * p5.height
+                p5.translate(xPos,yPos)
 
                 //todo do this in a spiral!!
 
-                if(settingsDef.override){
+                if (settingsDef.override) {
                     const border = sprite.borderColor
                     const fill = sprite.fillColor
-                    sprite.borderColor = hslToRgb(settingsDef.border.h/360,settingsDef.border.s,settingsDef.border.v, 1)
-                    sprite.fillColor = hslToRgb(settingsDef.fill.h/360,settingsDef.fill.s,settingsDef.fill.v, 1)
+                    sprite.borderColor = hslToRgb(settingsDef.border.h / 360, settingsDef.border.s, settingsDef.border.v, 1)
+                    sprite.fillColor = hslToRgb(settingsDef.fill.h / 360, settingsDef.fill.s, settingsDef.fill.v, 1)
                     sprite.render(p5.millis() / 1000, 0, 0,
-                        dancerImageWidth,dancerImageWidth, tintShader
+                        dancerImageWidth, dancerImageWidth, tintShader
                     )
                     sprite.borderColor = border
                     sprite.fillColor = fill
-                }else{
+                } else {
                     sprite.render(p5.millis() / 1000, 0, 0,
-                        dancerImageWidth,dancerImageWidth, tintShader
+                        dancerImageWidth, dancerImageWidth, tintShader
                     )
                 }
 
 
-
-
                 p5.pop()
-            }
+            // }
         }
         p5.pop()
     };
 
 
+    // drawSpiral(p5)
 
-
-        // drawSpiral(p5)
-
-    const drawSpiral=(p5)=>{
+    const drawSpiral = (p5) => {
         let radius = p5.width / 2;
-        let angle = p5.millis()/10000;
+        let angle = p5.millis() / 10000;
         let angleStep = 0.2;
         let sizeScale = 0.7;
-        do{
+        do {
             const data = dancersSequence[0]
             p5.push()
             p5.imageMode(p5.CENTER)
-            p5.translate(p5.width/2, p5.height/2)
+            p5.translate(p5.width / 2, p5.height / 2)
             p5.rotate(angle)
 
             //todo do this in a spiral!!
 
             data.sprite.render(p5.millis() / 1000, radius, 0,
-                radius*sizeScale,radius*sizeScale, tintShader
+                radius * sizeScale, radius * sizeScale, tintShader
             )
             p5.pop()
             angle += angleStep;
             radius *= .99
-        }while (radius > 5)
+        } while (radius > 5)
     }
 };
 
