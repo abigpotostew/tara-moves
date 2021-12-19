@@ -11,6 +11,17 @@ import {hslToRgb, rgbToHsl} from "./color";
 console.log(fxhash)   // the 64 chars hex number fed to your algorithm
 // console.log(fxrand()) // deterministic PRNG function, use it instead of Math.random()
 
+const rand = (lo, hi) => {
+    if (lo === undefined && hi === undefined) return fxrand()
+    if (hi === undefined && lo !== undefined) {
+        return fxrand() * lo
+    }
+    return fxrand() * (hi - lo) + lo
+}
+const randInt = (lo, hi) => {
+    return Math.floor(rand(lo, hi))
+}
+
 // returns a length 38 array of random integers ranging from 0-255
 function splitHash(hash) {
     return base58_to_binary(hash)
@@ -38,14 +49,14 @@ const images = [
     {name: 'tara rose', count: 30},
 ]
 
-const numbIters = Math.floor(rng[4] / 4);
-const primaryColor = [rng[4], rng[5], rng[6]]
-const secondaryColor = [rng[7], rng[8], rng[9]]
-const speed = 2 + Math.floor(rng[10] / 32 * 1000) / 1000
-const orbitRadius = Math.floor(rng[11] / 2);
-const octaves = Math.floor(rng[12] / 32) || 1 //0..8
+const numbIters = randInt(64)
+const primaryColor = [randInt(256),randInt(256),randInt(256)]
+const secondaryColor = [randInt(256),randInt(256),randInt(256)]
+const speed = 2 + Math.floor(rand(8) * 1000) / 1000
+const orbitRadius = randInt(128)
+const octaves = randInt(1, 8)
 const octavesRange = rng.slice(13, 21)
-const numDancers = Math.floor(fxrand() * 30) + 6
+const numDancers = randInt(30) + 6
 // const dancerColors = images
 //
 // const dancerColorsFunc = (sheetFrame)=>{
@@ -109,17 +120,8 @@ const motion = (p5, time, octaves) => {
 // `
 // document.body.append(container)
 
-const rand = (lo, hi) => {
-    if (!lo && !hi) return fxrand()
-    if (!hi && lo) {
-        return fxrand() * lo
-    }
-    return fxrand() * (hi - lo) + lo
-}
-const randInt = (lo, hi) => {
-    return Math.floor(rand(lo, hi))
-}
 
+const minDancerDistance = .07;
 const sketch = p5 => {
     // Variables scoped within p5
     // const d = new Star(500, 300, 4);
@@ -163,12 +165,12 @@ const sketch = p5 => {
         let canvas = p5.createCanvas(canvasSize, canvasSize, p5.WEBGL);
         canvas.drawingContext.disable(canvas.drawingContext.DEPTH_TEST);
 
-        const getDancerPosition=()=>{
+        const getNewDancerPosition = () => {
             let colliding = false;
             let position
             do {
-                 position = p5.createVector(rand(.15,.85),rand(.25,.75))
-                colliding = dancersSequence.some(dancer => dancer.position.dist(position) < .05)
+                position = p5.createVector(rand(.15, .85), rand(.20, .70))
+                colliding = dancersSequence.some(dancer => dancer.position.dist(position) < minDancerDistance)
             } while (colliding)
             return position;
         }
@@ -186,17 +188,16 @@ const sketch = p5 => {
             )
 
 
-
             dancersSequence.push({
                 sprite: new AnimatedSprite(p5, image.frames, rand(.03333 * 2, .03333 * 5), randInt(0, 100), {
                     borderColor,
                     fillColor
                 }),
                 offset: p5.createVector(rand(0, 50) - rand(0, 50), rand(0, 50) - rand(0, 50)),
-                position: getDancerPosition()
+                position: getNewDancerPosition()
             })
         }
-        dancersSequence.sort((a, b) => (a.position.x*a.position.y + a.position.y)  -  (b.position.x*b.position.y + b.position.y))
+        dancersSequence.sort((a, b) => (a.position.x * a.position.y + a.position.y) - (b.position.x * b.position.y + b.position.y))
 
 
         document.getElementById('debug').innerText = fxhash;
@@ -249,45 +250,45 @@ const sketch = p5 => {
         let i = 0;
 
         for (let data of dancersSequence) {
-        //
-        // }
-        // for (let x = 0; x < numDancers[0]; x++) {
-        //     for (let y = 0; y < numDancers[1]; y++) {
-        //         const data = dancersSequence[i++]
+            //
+            // }
+            // for (let x = 0; x < numDancers[0]; x++) {
+            //     for (let y = 0; y < numDancers[1]; y++) {
+            //         const data = dancersSequence[i++]
 
-                const sprite = data.sprite
-                const offset = data.offset
-                const position = data.position
-                // const xi = x / numDancers[0]
-                // const yi = y / numDancers[1]
-                p5.push()
-                p5.imageMode(p5.CENTER)
-                // const xPos = danceFloorX + x * danceFloorW + dancerImageWidthVisual * (xi + 1) * .5
-                // const yPos =  danceFloorY + y * danceFloorH + dancerImageWidthVisual * (yi + 1) * .5
-                const xPos = position.x * p5.width
-                const yPos = position.y * p5.height
-                p5.translate(xPos,yPos)
+            const sprite = data.sprite
+            const offset = data.offset
+            const position = data.position
+            // const xi = x / numDancers[0]
+            // const yi = y / numDancers[1]
+            p5.push()
+            p5.imageMode(p5.CENTER)
+            // const xPos = danceFloorX + x * danceFloorW + dancerImageWidthVisual * (xi + 1) * .5
+            // const yPos =  danceFloorY + y * danceFloorH + dancerImageWidthVisual * (yi + 1) * .5
+            const xPos = position.x * p5.width
+            const yPos = position.y * p5.height
+            p5.translate(xPos, yPos)
 
-                //todo do this in a spiral!!
+            //todo do this in a spiral!!
 
-                if (settingsDef.override) {
-                    const border = sprite.borderColor
-                    const fill = sprite.fillColor
-                    sprite.borderColor = hslToRgb(settingsDef.border.h / 360, settingsDef.border.s, settingsDef.border.v, 1)
-                    sprite.fillColor = hslToRgb(settingsDef.fill.h / 360, settingsDef.fill.s, settingsDef.fill.v, 1)
-                    sprite.render(p5.millis() / 1000, 0, 0,
-                        dancerImageWidth, dancerImageWidth, tintShader
-                    )
-                    sprite.borderColor = border
-                    sprite.fillColor = fill
-                } else {
-                    sprite.render(p5.millis() / 1000, 0, 0,
-                        dancerImageWidth, dancerImageWidth, tintShader
-                    )
-                }
+            if (settingsDef.override) {
+                const border = sprite.borderColor
+                const fill = sprite.fillColor
+                sprite.borderColor = hslToRgb(settingsDef.border.h / 360, settingsDef.border.s, settingsDef.border.v, 1)
+                sprite.fillColor = hslToRgb(settingsDef.fill.h / 360, settingsDef.fill.s, settingsDef.fill.v, 1)
+                sprite.render(p5.millis() / 1000, 0, 0,
+                    dancerImageWidth, dancerImageWidth, tintShader
+                )
+                sprite.borderColor = border
+                sprite.fillColor = fill
+            } else {
+                sprite.render(p5.millis() / 1000, 0, 0,
+                    dancerImageWidth, dancerImageWidth, tintShader
+                )
+            }
 
 
-                p5.pop()
+            p5.pop()
             // }
         }
         p5.pop()
