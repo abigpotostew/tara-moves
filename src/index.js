@@ -2,6 +2,7 @@ import p5 from 'p5';
 import {base58_to_binary} from 'base58-js'
 import {AnimatedSprite} from "./animated-sprite";
 import {loadMultipack, splitMultipackSheet} from "./spritesheet";
+import {timer} from "./timer";
 
 
 // these are the variables you can use as inputs to your algorithms
@@ -42,7 +43,7 @@ const speed = 2 + Math.floor(rng[10] / 32 * 1000) / 1000
 const orbitRadius = Math.floor(rng[11] / 2);
 const octaves = Math.floor(rng[12] / 32) || 1 //0..8
 const octavesRange = rng.slice(13, 21)
-const numDancers = [Math.floor(fxrand() * 5) + 5, Math.floor(fxrand() * 5) + 5]
+const numDancers = [Math.floor(fxrand() * 3) + 3, Math.floor(fxrand() * 3) + 3]
 // const dancerIdx = rng[21] % images.length
 
 window.$fxhashFeatures = {
@@ -115,7 +116,8 @@ const sketch = p5 => {
 let sheets = [];
 let tintShader;
     p5.preload = () => {
-        sheets= loadMultipack(p5, ['all-0','all-1'], `./packed`)
+        const sheetsI = [...new Array(5).keys()].map(i => 'all-'+i)
+        sheets= loadMultipack(p5, sheetsI, `./packed`)
         tintShader = p5.loadShader('./shader/default.vert', './shader/tint.frag');
     }
 
@@ -123,13 +125,13 @@ let tintShader;
     // ======================================
     p5.setup = () => {
         let canvasSize = Math.floor(Math.min(p5.windowWidth, p5.windowHeight) * border);
-        let canvas = p5.createCanvas(canvasSize, canvasSize, p5.WEBGL);
+        let canvas = p5.createCanvas(canvasSize, canvasSize);
         // canvas.drawingContext.disable(canvas.drawingContext.DEPTH_TEST);
 
         let buffer = p5.createGraphics(100,100, p5.WEBGL)
 
         canvas.parent('sketch');
-        splitMultipackSheet(p5,images, sheets)
+        splitMultipackSheet(p5,images, sheets, tintShader)
         for (let i = 0; i < numDancers[0] * numDancers[1]; i++) {
             const image = images[randInt(0, images.length)]
             dancersSequence.push({
@@ -150,7 +152,7 @@ let tintShader;
     // ======================================
     p5.draw = () => {
         p5.push()
-        p5.translate(-p5.width/2,-p5.height/2,0);
+        // p5.translate(-p5.width/2,-p5.height/2,0);
         p5.background(rng[3]);
         const primaryCol = p5.color(...primaryColor)
         const secondaryCol = p5.color(...secondaryColor)
@@ -195,6 +197,8 @@ let tintShader;
             }
         }
         p5.pop()
+
+        document.getElementById('debug').innerText = timer.avg.toFixed(2)+' ms';
     };
 };
 

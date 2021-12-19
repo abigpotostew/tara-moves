@@ -1,7 +1,7 @@
 {"frames": [
 
 {
-	"filename": "amina_00023.png",
+	"filename": "heno_00003.png",
 	"frame": {"x":1,"y":1,"w":540,"h":540},
 	"rotated": false,
 	"trimmed": false,
@@ -9,7 +9,7 @@
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "amina_00025.png",
+	"filename": "heno_00005.png",
 	"frame": {"x":543,"y":1,"w":540,"h":540},
 	"rotated": false,
 	"trimmed": false,
@@ -17,7 +17,7 @@
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "amina_00028.png",
+	"filename": "heno_00008.png",
 	"frame": {"x":1085,"y":1,"w":540,"h":540},
 	"rotated": false,
 	"trimmed": false,
@@ -25,7 +25,7 @@
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "amina_00030.png",
+	"filename": "heno_00010.png",
 	"frame": {"x":1,"y":543,"w":540,"h":540},
 	"rotated": false,
 	"trimmed": false,
@@ -33,7 +33,7 @@
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "amina_00033.png",
+	"filename": "heno_00013.png",
 	"frame": {"x":543,"y":543,"w":540,"h":540},
 	"rotated": false,
 	"trimmed": false,
@@ -41,7 +41,7 @@
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "amina_00035.png",
+	"filename": "heno_00015.png",
 	"frame": {"x":1085,"y":543,"w":540,"h":540},
 	"rotated": false,
 	"trimmed": false,
@@ -49,7 +49,7 @@
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "amina_00038.png",
+	"filename": "heno_00018.png",
 	"frame": {"x":1,"y":1085,"w":540,"h":540},
 	"rotated": false,
 	"trimmed": false,
@@ -57,7 +57,7 @@
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "amina_00040.png",
+	"filename": "heno_00020.png",
 	"frame": {"x":543,"y":1085,"w":540,"h":540},
 	"rotated": false,
 	"trimmed": false,
@@ -65,7 +65,7 @@
 	"sourceSize": {"w":540,"h":540}
 },
 {
-	"filename": "heno_00000.png",
+	"filename": "heno_00023.png",
 	"frame": {"x":1085,"y":1085,"w":540,"h":540},
 	"rotated": false,
 	"trimmed": false,
@@ -75,11 +75,11 @@
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "all-1.png",
+	"image": "all-2.png",
 	"format": "RGBA8888",
 	"size": {"w":1626,"h":1626},
 	"scale": "0.5",
-	"related_multi_packs": [ "all-0.json", "all-2.json", "all-3.json", "all-4.json", "all-5.json" ],
+	"related_multi_packs": [ "all-0.json", "all-1.json", "all-3.json", "all-4.json", "all-5.json" ],
 	"smartupdate": "$TexturePacker:SmartUpdate:e778ed25a59e027123642a4a4cbf3ded:6c15387b4117dd3961da14acc1fd0edc:88844646608cea68a86cb407bb91b837$"
 }
 }

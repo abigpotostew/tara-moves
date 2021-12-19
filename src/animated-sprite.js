@@ -1,37 +1,24 @@
+import {timer} from "./timer";
 
-const timer = {
-    ct:0,
-    total: 0,
-    avg: 0,
-    start: function() {
-        this.startTime = Date.now();
-    },
-    stop: function() {
-        this.stopTime = Date.now();
-        this.total += this.stopTime - this.startTime;
-        this.ct++;
-        this.avg = this.total / this.ct;
-    },
-}
 
-export class AnimatedSprite{
-    constructor(p5, frames, speed, startFrame, buffer){
+export class AnimatedSprite {
+    constructor(p5, frames, speed, startFrame, buffer) {
         this.frames = frames;
         this.speed = speed;
-        this.currentFrame = startFrame ? (startFrame% frames.length) : 0;
+        this.currentFrame = startFrame ? (startFrame % frames.length) : 0;
         this.lastTime = 0;
         this.p5 = p5
-        this.buffer=buffer;
+        this.buffer = buffer;
     }
 
-    update(time){
-        if(time > this.lastTime + this.speed){
+    update(time) {
+        if (time > this.lastTime + this.speed) {
             this.lastTime = time;
             this.currentFrame = (this.currentFrame + 1) % this.frames.length;
         }
     }
 
-    render(time, x, y, w, h, shader){
+    render(time, x, y, w, h, shader) {
         this.update(time);
         const info = this.frames[this.currentFrame];
         const image = info.image
@@ -44,34 +31,34 @@ export class AnimatedSprite{
         let px = x + ss.x
         let py = x + ss.y
 
-        if(shader){
+        if (shader) {
             // this.p5.shader(shader);
-            shader.setUniform("texture", image);
+            // shader.setUniform("texture", image);
             // this.p5.translate(px, py);
             // const buf = this.p5.createGraphics(frame.w,frame.h, p5.WEBGL)
-            timer .start()
-            this.buffer.resizeCanvas(frame.w,frame.h);
-            timer .stop()
-            console.log(timer.avg)
-            this.buffer.shader(shader);
+            // timer.start()
+            // this.buffer.resizeCanvas(frame.w, frame.h);
+            // timer.stop()
+            // this.buffer.shader(shader);
 
             //weird sizing:
-            this.buffer.rect(0,0, frame.w, frame.h);
+            // this.buffer.noStroke();
+            // this.buffer.rect(0, 0, frame.w, frame.h);
             //works kinda but not tex pos
             // buf.quad(-1, -1, 1, -1, 1, 1, -1, 1);
             // this.p5.quad(px, py, px + frame.w, py, px + frame.w, py + frame.h, px, py + frame.h);
-            this.buffer.resetShader()
-
-
-            this.p5.push()
-            this.p5.noStroke();
-            // this.p5.translate(px, py);
-            this.p5.image(this.buffer, x+ss.x, y+ss.y, w||frame.w, h||frame.h, xOffset, yOffset, frame.w, frame.h);
-
-            this.p5.pop()
+            // this.buffer.resetShader()
 
 
         }
+        this.p5.push()
+        // this.p5.noStroke();
+        // this.p5.translate(px, py);
+        this.p5.stroke(0,0,0)
+        // this.p5.image(image, x + ss.x, y + ss.y, w || frame.w, h || frame.h);//, xOffset, yOffset, frame.w, frame.h);
+        this.p5.image(image, x, y, w,h);//, w || frame.w, h || frame.h);//, xOffset, yOffset, frame.w, frame.h);
+
+        this.p5.pop()
 
 
         // this.p5.noStroke()
