@@ -153,6 +153,7 @@ const sketch = p5 => {
         }
 
 
+        document.getElementById('debug').innerText = fxhash;
     };
     // The sketch draw method
     p5.windowResized = () => {
@@ -210,16 +211,40 @@ const sketch = p5 => {
                 sprite.render(p5.millis() / 1000, 0, 0,
                     dancerImageWidth,dancerImageWidth, tintShader
                 )
-
-
                 p5.pop()
-
             }
         }
         p5.pop()
-
-        document.getElementById('debug').innerText = fxhash;
     };
+
+
+
+
+        // drawSpiral(p5)
+
+    const drawSpiral=(p5)=>{
+        let radius = p5.width / 2;
+        let angle = p5.millis()/10000;
+        let angleStep = 0.2;
+        let sizeScale = 0.7;
+        do{
+            const data = dancersSequence[0]
+            p5.push()
+            p5.imageMode(p5.CENTER)
+            p5.translate(p5.width/2, p5.height/2)
+            p5.rotate(angle)
+
+            //todo do this in a spiral!!
+
+            data.sprite.render(p5.millis() / 1000, radius, 0,
+                radius*sizeScale,radius*sizeScale, tintShader
+            )
+            p5.pop()
+            angle += angleStep;
+            radius *= .99
+        }while (radius > 5)
+    }
 };
+
 
 new p5(sketch);
