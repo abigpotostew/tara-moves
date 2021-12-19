@@ -36,28 +36,27 @@ export const splitMultipackSheet = (p5, images, jsonSheets, shader, colorsFunc )
             const w = frame.frame.w;
             const h = frame.frame.h;
 
-            // copy subsection into an image
-            const imgframe = p5.createImage(w, h);
-            imgframe.copy(jsonSheet.image, xOffset, yOffset, w, h, 0, 0, w, h);
+            // // copy subsection into an image
+            // const imgframe = p5.createImage(w, h);
+            // imgframe.copy(jsonSheet.image, xOffset, yOffset, w, h, 0, 0, w, h);
+            //
+            //
+            // // paint image with shader in buffer
+            // buffer.resizeCanvas(w, h);
+            // buffer.shader(shader);
+            //
+            // shader.setUniform("replaceRed", [0, 1, 0]);
+            // shader.setUniform("replaceBlue", [1, 0, 0]);
+            // shader.setUniform("texture", imgframe);
+            // buffer.rect(0, 0, w, h);
+            //
+            // const imgframefinal = p5.createImage(w, h);
+            // imgframefinal.copy(buffer,-w/2,-h/2, w, h, 0, 0, w, h);
+            // frame.image = imgframefinal; //jsonSheet.image
+            // buffer.resetShader()
+            // // imgframe.remove()
 
-
-            // paint image with shader in buffer
-            buffer.resizeCanvas(w, h);
-            buffer.shader(shader);
-
-            shader.setUniform("replaceRed", [0, 1, 0]);
-            shader.setUniform("replaceBlue", [1, 0, 0]);
-            shader.setUniform("texture", imgframe);
-            buffer.rect(0, 0, w, h);
-
-            const imgframefinal = p5.createImage(w, h);
-            imgframefinal.copy(buffer,-w/2,-h/2, w, h, 0, 0, w, h);
-            frame.image = imgframefinal; //jsonSheet.image
-
-            buffer.resetShader()
-
-            // imgframe.remove()
-
+            frame.image = jsonSheet.image
             allframes.push(frame)
         }
     }

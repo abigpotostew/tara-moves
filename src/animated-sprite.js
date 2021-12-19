@@ -2,12 +2,16 @@ import {timer} from "./timer";
 
 
 export class AnimatedSprite {
-    constructor(p5, frames, speed, startFrame) {
+    constructor(p5, frames, speed, startFrame, colorOpts) {
         this.frames = frames;
         this.speed = speed;
         this.currentFrame = startFrame ? (startFrame % frames.length) : 0;
         this.lastTime = 0;
         this.p5 = p5
+        this.borderColor = colorOpts.borderColor ? colorOpts.borderColor : '#000000';
+        this.fillColor = colorOpts.fillColor ? colorOpts.fillColor : '#ffffff';
+        this.width = 540
+        this.height = 540
     }
 
     update(time) {
@@ -17,7 +21,7 @@ export class AnimatedSprite {
         }
     }
 
-    render(time, x, y, w, h) {
+    render(time, x, y, w, h, shader) {
         this.update(time);
         const info = this.frames[this.currentFrame];
         const image = info.image
@@ -31,8 +35,14 @@ export class AnimatedSprite {
         let py = x + ss.y
 
         this.p5.push()
+
+        shader.samplerIndex = 1;
+        this.p5.shader(shader)
+        shader.setUniform('replaceRed', this.fillColor)
+        shader.setUniform('replaceBlue', this.borderColor)
+
         this.p5.stroke(0,0,0)
-        this.p5.image(image, x, y, w,h);//, w || frame.w, h || frame.h);//, xOffset, yOffset, frame.w, frame.h);
+        this.p5.image(image, px, py, w || frame.w, h || frame.h, xOffset, yOffset, frame.w, frame.h);
 
         this.p5.pop()
 

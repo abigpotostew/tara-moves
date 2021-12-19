@@ -29,7 +29,7 @@ const rng = splitHash(fxhash)
 // More about it in the guide, section features:
 // [https://fxhash.xyz/articles/guide-mint-generative-token#features]
 //
-const sheets = ['all-0','all-1']
+const sheets = ['all-0', 'all-1']
 const images = [
     {name: 'amina', count: 43},
     {name: 'heno', count: 50},
@@ -121,11 +121,11 @@ const sketch = p5 => {
 
     let dancersSequence = [];
     let loaded = false;
-let sheets = [];
-let tintShader;
+    let sheets = [];
+    let tintShader;
     p5.preload = () => {
-        const sheetsI = [...new Array(5).keys()].map(i => 'all-'+i)
-        sheets= loadMultipack(p5, sheetsI, `./packed`)
+        const sheetsI = [...new Array(6).keys()].map(i => 'all-' + i)
+        sheets = loadMultipack(p5, sheetsI, `./packed`)
         tintShader = p5.loadShader('./shader/default.vert', './shader/tint.frag');
     }
 
@@ -133,18 +133,22 @@ let tintShader;
     // ======================================
     p5.setup = () => {
         let canvasSize = Math.floor(Math.min(p5.windowWidth, p5.windowHeight) * border);
-        let canvas = p5.createCanvas(canvasSize, canvasSize);
-        // canvas.drawingContext.disable(canvas.drawingContext.DEPTH_TEST);
+        let canvas = p5.createCanvas(canvasSize, canvasSize, p5.WEBGL);
+        canvas.drawingContext.disable(canvas.drawingContext.DEPTH_TEST);
 
-        let buffer = p5.createGraphics(100,100, p5.WEBGL)
 
         canvas.parent('sketch');
-        splitMultipackSheet(p5,images, sheets, tintShader)
+        splitMultipackSheet(p5, images, sheets, tintShader)
         for (let i = 0; i < numDancers[0] * numDancers[1]; i++) {
             const image = images[randInt(0, images.length)]
+            const borderColor = [rand(), rand(), rand()]
+            const fillColor = [rand(), rand(), rand()]
             dancersSequence.push({
-                sprite: new AnimatedSprite(p5, image.frames, rand(.03333 * 2, .03333 * 5), randInt(0, 100),buffer)
-                , offset:p5.createVector(rand(0, 50)-rand(0, 50),rand(0, 50)-rand(0, 50))
+                sprite: new AnimatedSprite(p5, image.frames, rand(.03333 * 2, .03333 * 5), randInt(0, 100), {
+                    borderColor,
+                    fillColor
+                }),
+                offset: p5.createVector(rand(0, 50) - rand(0, 50), rand(0, 50) - rand(0, 50))
             })
         }
 
@@ -160,7 +164,7 @@ let tintShader;
     // ======================================
     p5.draw = () => {
         p5.push()
-        // p5.translate(-p5.width/2,-p5.height/2,0);
+        p5.translate(-p5.width / 2, -p5.height / 2, 0);
         p5.background(rng[3]);
         const primaryCol = p5.color(...primaryColor)
         const secondaryCol = p5.color(...secondaryColor)
@@ -177,27 +181,35 @@ let tintShader;
         p5.pop()
 
 
-        let i = 0;
-        const danceFloorW = p5.width * .7 / numDancers[0]
-        const danceFloorH = p5.height * .7 / numDancers[1]
+        const ratio = 540/1400
+        const visualRatio = ratio*.5
+        const dancerImageWidth = p5.width*ratio
+        const dancerImageWidthVisual = p5.width*visualRatio
+        const danceFloorW = (p5.width * .7 )/ numDancers[0]
+        const danceFloorH = (p5.height * .7 ) / numDancers[1]
         const danceFloorX = p5.width * .15
         const danceFloorY = p5.height * .15
 
+
+        let i = 0;
         for (let x = 0; x < numDancers[0]; x++) {
             for (let y = 0; y < numDancers[1]; y++) {
-                const data =dancersSequence[i++]
+                const data = dancersSequence[i++]
 
                 const sprite = data.sprite
                 const offset = data.offset
+                const xi = x/numDancers[0]
+                const yi = y/numDancers[1]
                 p5.push()
-                p5.translate(danceFloorX + x * danceFloorW + offset.x-270*.5,
-                    danceFloorY + y * danceFloorH + offset.y-270*.5)
+                p5.imageMode(p5.CENTER)
+                p5.translate(danceFloorX + x * danceFloorW  + dancerImageWidthVisual*(xi+1)*.5 ,
+                    danceFloorY + y * danceFloorH + dancerImageWidthVisual*(yi+1)*.5)
 
+                //todo do this in a spiral!!
 
-
-                sprite.render(p5.millis() / 1000,0,0,
-                    undefined,undefined,tintShader
-                    )
+                sprite.render(p5.millis() / 1000, 0, 0,
+                    dancerImageWidth,dancerImageWidth, tintShader
+                )
 
 
                 p5.pop()
@@ -206,7 +218,7 @@ let tintShader;
         }
         p5.pop()
 
-        document.getElementById('debug').innerText = timer.avg.toFixed(2)+' ms';
+        document.getElementById('debug').innerText = fxhash;
     };
 };
 
