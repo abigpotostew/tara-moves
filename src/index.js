@@ -49,14 +49,55 @@ const images = [
     {name: 'tara rose', count: 30},
 ]
 
-const numbIters = randInt(64)
-const primaryColor = [randInt(256),randInt(256),randInt(256)]
-const secondaryColor = [randInt(256),randInt(256),randInt(256)]
-const speed = 2 + Math.floor(rand(8) * 1000) / 1000
-const orbitRadius = randInt(128)
-const octaves = randInt(1, 8)
-const octavesRange = rng.slice(13, 21)
-const numDancers = randInt(30) + 6
+const colorModeR = rand()
+const colorModes = {
+    rainbowSpectrum : 'rainbowSpectrum',
+    normal: 'normal'
+}
+const crowdModes = {
+    single: 'single',
+    medium: 'medium',
+    large: 'large',
+}
+
+const getCrowdMode = ()=>{
+    const crownModeR = rand()
+    if(crownModeR < 0.05){
+        return crowdModes.single
+    }
+    if(crownModeR < 0.1){
+        return crowdModes.large
+    }
+    return crowdModes.medium
+}
+const getNumDancers = (crowdMode)=>{
+    if(crowdMode === crowdModes.single){
+        return 1
+    }
+    if(crowdMode === crowdModes.large){
+        return randInt( 40, 60)
+    }
+    return randInt(30) + 6
+}
+const crowdMode = getCrowdMode()
+const settings = {
+     numbIters: randInt(64),
+     primaryColor : [randInt(256),randInt(256),randInt(256)],
+     secondaryColor : [randInt(256),randInt(256),randInt(256)],
+     speed : 2 + Math.floor(rand(8) * 1000) / 1000,
+     orbitRadius : randInt(128),
+     octaves : randInt(1, 8),
+     octavesRange : rng.slice(13, 21),
+    crowdMode: crowdMode,
+     numDancers : getNumDancers(crowdMode),
+    colorMode : colorModeR<.1? colorModes.rainbowSpectrum: colorModes.normal,
+    // gui specific
+    override:false,
+    border: {h: rand()*360, s: 0.9, v: 0.3},
+    fill: {h: rand()*360, s: 0.9, v: 0.3},
+}
+
+
 // const dancerColors = images
 //
 // const dancerColorsFunc = (sheetFrame)=>{
@@ -76,38 +117,24 @@ const numDancers = randInt(30) + 6
  *
  */
 window.$fxhashFeatures = {
-    "Primary Color": '#' + primaryColor.map(p => p.toString(16).toUpperCase()).join(''),
-    "Secondary Color": '#' + secondaryColor.map(p => p.toString(16).toUpperCase()).join(''),
-    "Number of lines": numbIters,
-    "Speed": speed,
-    'Radius': orbitRadius,
-    'Octaves': octaves,
+    "Primary Color": '#' + settings.primaryColor.map(p => p.toString(16).toUpperCase()).join(''),
+    "Secondary Color": '#' + settings.secondaryColor.map(p => p.toString(16).toUpperCase()).join(''),
+    "Number of lines": settings.numbIters,
+    "Speed": settings.speed,
+    'Radius': settings.orbitRadius,
+    'Octaves': settings.octaves,
     // 'Dancer': images[dancerIdx].name,
-    'Dancers Count': numDancers,
+    'Dancers Count': settings.numDancers,
+    "Crowd Mode": settings.crowdMode,
 }
 
-console.log(window.$fxhashFeatures)
+console.log('Features:',window.$fxhashFeatures)
 
-const fbm = (p5, vec, octaves) => {
-    // Initial values
-    let value = 0.0;
-    let amplitude = 2.0;
-    octaves = octaves || 6;
-    const frequency = 0;
-    //
-    // Loop of octaves
-    for (let i = 0; i < octaves; i++) {
-        value += amplitude * p5.noise(vec.x, vec.y);
-        vec.mult(2);
-        amplitude *= 0.5;
-    }
-    return value;
-};
 
 const motion = (p5, time, octaves) => {
     let v = 0;
     for (let i = 0; i < octaves; i++) {
-        v += p5.sin(time * octavesRange[i] / 32 + octavesRange[i])
+        v += p5.sin(time * settings.octavesRange[i] / 32 + settings.octavesRange[i])
     }
     return v / octaves
 }
@@ -122,6 +149,7 @@ const motion = (p5, time, octaves) => {
 
 
 const minDancerDistance = .07;
+const spriteImageWidth = 540;
 const sketch = p5 => {
     // Variables scoped within p5
     // const d = new Star(500, 300, 4);
@@ -140,22 +168,23 @@ const sketch = p5 => {
         sheets = loadMultipack(p5, sheetsI, `./packed`)
         tintShader = p5.loadShader('./shader/default.vert', './shader/tint.frag');
     }
-
-    let settingsDef = {
-        name: 'MovesGen!',
-        override: false,
-        border: {h: p5.random(0, 360), s: 0.9, v: 0.3},
-        fill: {h: p5.random(0, 360), s: 0.9, v: 0.3},
-        // da      : 1.0,
-        // db      : 0.6,
-        // feed    : 0.04,
-        // kill    : 0.06,
-        // dt      : 1.0,
-        // iter    : 10,
-        // reset   : initRD,
-
-        // preset0 : function() {  this.feed = 0.040; this.kill = 0.060; this.da = 1.00; this.db = 0.60; },
-    };
+    //
+    // let settingsDef = {
+    //     name: 'MovesGen!',
+    //     override: false,
+    //     border: {h: p5.random(0, 360), s: 0.9, v: 0.3},
+    //     fill: {h: p5.random(0, 360), s: 0.9, v: 0.3},
+    //     colorMode: colorModes.rainbowSpectrum,
+    //     // da      : 1.0,
+    //     // db      : 0.6,
+    //     // feed    : 0.04,
+    //     // kill    : 0.06,
+    //     // dt      : 1.0,
+    //     // iter    : 10,
+    //     // reset   : initRD,
+    //
+    //     // preset0 : function() {  this.feed = 0.040; this.kill = 0.060; this.da = 1.00; this.db = 0.60; },
+    // };
 
 
     // Setup function
@@ -166,6 +195,9 @@ const sketch = p5 => {
         canvas.drawingContext.disable(canvas.drawingContext.DEPTH_TEST);
 
         const getNewDancerPosition = () => {
+            if(settings.crowdMode===crowdModes.single) {
+                return p5.createVector(.5,.5)
+            }
             let colliding = false;
             let position
             do {
@@ -177,7 +209,7 @@ const sketch = p5 => {
 
         canvas.parent('sketch');
         splitMultipackSheet(p5, images, sheets, tintShader)
-        for (let i = 0; i < numDancers; i++) {
+        for (let i = 0; i < settings.numDancers; i++) {
             const image = images[randInt(0, images.length)]
             const borderColor = [rand(), rand(), rand()]
             const fillColor = [rand(), rand(), rand()]
@@ -187,14 +219,15 @@ const sketch = p5 => {
                 // 'border:', rgbToHsl(borderColor[0], borderColor[1], borderColor[2], 1, 360))
             )
 
-
+            const position = getNewDancerPosition()
             dancersSequence.push({
                 sprite: new AnimatedSprite(p5, image.frames, rand(.03333 * 2, .03333 * 5), randInt(0, 100), {
                     borderColor,
                     fillColor
                 }),
                 offset: p5.createVector(rand(0, 50) - rand(0, 50), rand(0, 50) - rand(0, 50)),
-                position: getNewDancerPosition()
+                position: position,
+                distanceToCenter : position.dist(p5.createVector(.5, .5)),
             })
         }
         dancersSequence.sort((a, b) => (a.position.x * a.position.y + a.position.y) - (b.position.x * b.position.y + b.position.y))
@@ -203,10 +236,11 @@ const sketch = p5 => {
         document.getElementById('debug').innerText = fxhash;
 
         var gui = new dat.GUI();
-        gui.add(settingsDef, 'name');
-        gui.add(settingsDef, 'override')
-        gui.addColor(settingsDef, 'fill')
-        gui.addColor(settingsDef, 'border')
+        gui.add(settings, 'override')
+        gui.addColor(settings, 'fill', settings.fill)
+        gui.addColor(settings, 'border', settings.border)
+        gui.add(settings, 'colorMode',[colorModes.rainbowSpectrum, colorModes.normal], settings.colorMode).listen()
+
 
         // gui.add(rdDef, 'preset0');
     };
@@ -222,29 +256,32 @@ const sketch = p5 => {
         p5.push()
         p5.translate(-p5.width / 2, -p5.height / 2, 0);
         p5.background(rng[3]);
-        const primaryCol = p5.color(...primaryColor)
-        const secondaryCol = p5.color(...secondaryColor)
+        const primaryCol = p5.color(...settings.primaryColor)
+        const secondaryCol = p5.color(...settings.secondaryColor)
         const time = p5.millis() / 10000;
         p5.push()
         p5.rectMode(p5.CENTER);
         p5.translate(p5.width / 2, p5.height / 2)
-        for (let i = 0; i < numbIters; i++) {
+        for (let i = 0; i < settings.numbIters; i++) {
             p5.fill(i % 2 === 0 ? primaryCol : secondaryCol)
-            const fi = i / numbIters
-            const m = motion(p5, time * speed, octaves)
-            p5.rect(p5.cos(time * speed + m) * orbitRadius * m * fi, p5.sin(time * speed + m) * orbitRadius * m * fi, p5.width - i / numbIters * p5.width)
+            const fi = i / settings.numbIters
+            const m = motion(p5, time * settings.speed, settings.octaves)
+            p5.rect(p5.cos(time * settings.speed + m) * settings.orbitRadius * m * fi, p5.sin(time * settings.speed + m) * settings.orbitRadius * m * fi, p5.width - i / settings.numbIters * p5.width)
         }
         p5.pop()
 
 
-        const ratio = 540 / 1400
-        const visualRatio = ratio * .5
-        const dancerImageWidth = p5.width * ratio
-        const dancerImageWidthVisual = p5.width * visualRatio
-        const danceFloorW = (p5.width * .7) / numDancers
-        const danceFloorH = (p5.height * .7) / numDancers
-        const danceFloorX = p5.width * .15
-        const danceFloorY = p5.height * .15
+        let ratio = spriteImageWidth / 1400
+        if(settings.crowdMode===crowdModes.single) {
+            ratio = spriteImageWidth/650
+        }
+        let dancerImageWidth = p5.width * ratio
+        // const visualRatio = ratio * .5
+        // const dancerImageWidthVisual = p5.width * visualRatio
+        // const danceFloorW = (p5.width * .7) / settings.numDancers
+        // const danceFloorH = (p5.height * .7) / settings.numDancers
+        // const danceFloorX = p5.width * .15
+        // const danceFloorY = p5.height * .15
 
 
         let i = 0;
@@ -256,9 +293,7 @@ const sketch = p5 => {
             //     for (let y = 0; y < numDancers[1]; y++) {
             //         const data = dancersSequence[i++]
 
-            const sprite = data.sprite
-            const offset = data.offset
-            const position = data.position
+            const {sprite, offset, position, distanceToCenter} = data
             // const xi = x / numDancers[0]
             // const yi = y / numDancers[1]
             p5.push()
@@ -269,22 +304,37 @@ const sketch = p5 => {
             const yPos = position.y * p5.height
             p5.translate(xPos, yPos)
 
-            //todo do this in a spiral!!
 
-            if (settingsDef.override) {
+            if (settings.override) {
                 const border = sprite.borderColor
                 const fill = sprite.fillColor
-                sprite.borderColor = hslToRgb(settingsDef.border.h / 360, settingsDef.border.s, settingsDef.border.v, 1)
-                sprite.fillColor = hslToRgb(settingsDef.fill.h / 360, settingsDef.fill.s, settingsDef.fill.v, 1)
+                sprite.borderColor = hslToRgb(settings.border.h / 360, settings.border.s, settings.border.v, 1)
+                sprite.fillColor = hslToRgb(settings.fill.h / 360, settings.fill.s, settings.fill.v, 1)
                 sprite.render(p5.millis() / 1000, 0, 0,
                     dancerImageWidth, dancerImageWidth, tintShader
                 )
                 sprite.borderColor = border
                 sprite.fillColor = fill
             } else {
-                sprite.render(p5.millis() / 1000, 0, 0,
-                    dancerImageWidth, dancerImageWidth, tintShader
-                )
+                if(settings.colorMode === colorModes.normal){
+                    sprite.render(p5.millis() / 1000, 0, 0,
+                        dancerImageWidth, dancerImageWidth, tintShader
+                    )
+                }else if (settings.colorMode === colorModes.rainbowSpectrum){
+                    const border = sprite.borderColor
+                    const fill = sprite.fillColor
+                    const borderHue = (p5.millis() / 5000 + distanceToCenter)%1
+                    const fillHue = (p5.millis() / 5000  + .3 + distanceToCenter)%1
+                    sprite.borderColor = hslToRgb(borderHue, 1.0,0.5, 1)
+                    sprite.fillColor = hslToRgb(fillHue, 1.0,0.5, 1)
+                    sprite.render(p5.millis() / 1000, 0, 0,
+                        dancerImageWidth, dancerImageWidth, tintShader
+                    )
+                    sprite.borderColor = border
+                    sprite.fillColor = fill
+                }else
+                    throw new Error("color mode not supported")
+
             }
 
 
