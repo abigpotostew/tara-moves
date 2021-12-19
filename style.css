@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+  overflow: hidden;
+
+}
+/*#sketch{*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+#debug{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:white;
+}
