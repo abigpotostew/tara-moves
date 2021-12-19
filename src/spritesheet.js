@@ -24,7 +24,7 @@ export const loadMultipack = (p5, sheetNames, url) => {
 
 }
 
-export const splitMultipackSheet = (p5, images, jsonSheets, shader) => {
+export const splitMultipackSheet = (p5, images, jsonSheets, shader, colorsFunc ) => {
     const allframes = []
     const buffer = p5.createGraphics(100, 100, p5.WEBGL);
     buffer.noStroke();

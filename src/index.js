@@ -44,6 +44,14 @@ const orbitRadius = Math.floor(rng[11] / 2);
 const octaves = Math.floor(rng[12] / 32) || 1 //0..8
 const octavesRange = rng.slice(13, 21)
 const numDancers = [Math.floor(fxrand() * 3) + 3, Math.floor(fxrand() * 3) + 3]
+// const dancerColors = images
+//
+// const dancerColorsFunc = (sheetFrame)=>{
+//     if(sheetFrame) {
+//
+//     }
+// }
+
 // const dancerIdx = rng[21] % images.length
 
 window.$fxhashFeatures = {
