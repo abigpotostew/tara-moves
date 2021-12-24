@@ -62,8 +62,9 @@ const crowdModes = {
 }
 const bgModes = {
     naturalDeform:'Natural Deformation',
-    gradient: 'Gradient',
+    gradient: 'Specrat Gradient',
     wigglingSquares: 'Wiggling Squares',
+    linearGradient: 'Gradient',
 }
 
 const getCrowdMode = () => {
@@ -86,7 +87,11 @@ const getNumDancers = (crowdMode) => {
     return randInt(30) + 6
 }
 const crowdMode = getCrowdMode()
-const bgMode = rand()
+const bgMode = (()=>{
+    // const r = rand()
+    // bgMode<.2? bgModes.naturalDeform: (bgMode<.6?bgModes.gradient:bgModes.wigglingSquares),
+    return bgModes.linearGradient
+})()
 const settings = {
     numbIters: randInt(64),
     primaryColor: [randInt(256), randInt(256), randInt(256)],
@@ -106,7 +111,7 @@ const settings = {
     fill: {h: rand() * 360, s: 0.9, v: 0.3},
     usePerspective : crowdMode === crowdModes.single? false : rand()<.3,
 
-    background : bgMode<.2? bgModes.naturalDeform: (bgMode<.6?bgModes.gradient:bgModes.wigglingSquares),
+    background : bgMode,
 }
 
 
@@ -172,12 +177,14 @@ const sketch = p5 => {
     let tintShader;
     let naturalDeform;
     let gradientShader;
+    let linearGradientShader;
     p5.preload = () => {
         const sheetsI = [...new Array(6).keys()].map(i => 'all-' + i)
         sheets = loadMultipack(p5, sheetsI, `./packed`)
         tintShader = p5.loadShader('./shader/default.vert', './shader/tint.frag');
         naturalDeform = p5.loadShader('./shader/default.vert', './shader/naturalDeform.frag');
         gradientShader = p5.loadShader('./shader/default.vert', './shader/gradient.frag');
+        linearGradientShader = p5.loadShader('./shader/default.vert', './shader/linear-gradient.frag');
     }
     //
     // let settingsDef = {
@@ -285,6 +292,8 @@ const sketch = p5 => {
             drawGradientBg()
         }else if (settings.background === bgModes.wigglingSquares) {
             drawWigglingSquaresBg()
+        }else if (settings.background===bgModes.linearGradient){
+            drawLinearGradientBg()
         }
         //
 
@@ -319,7 +328,7 @@ const sketch = p5 => {
             // const yPos =  danceFloorY + y * danceFloorH + dancerImageWidthVisual * (yi + 1) * .5
             const xPos = position.x * p5.width
             const yPos = position.y * p5.height
-            const zPos = settings.usePerspective? (yPos)*.5 : 0
+            const zPos = settings.usePerspective? (yPos)*.6- p5.width*.1 : 0
             p5.translate(xPos, yPos, zPos)
 
 
@@ -383,6 +392,14 @@ const sketch = p5 => {
         gradientShader.setUniform('color3', settings.fourthColor.map(c=>c/255) );
         gradientShader.setUniform('u_time', p5.millis() / 1000);
         p5.shader(gradientShader);
+        p5.rect(0, 0, p5.width, p5.height);
+        p5.resetShader();
+    }
+
+    const drawLinearGradientBg=()=>{
+        linearGradientShader.setUniform('color0', settings.primaryColor.map(c=>c/255) );
+        linearGradientShader.setUniform('color1', settings.secondaryColor.map(c=>c/255) );
+        p5.shader(linearGradientShader);
         p5.rect(0, 0, p5.width, p5.height);
         p5.resetShader();
     }
