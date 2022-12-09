@@ -1,0 +1,229 @@
+{"frames": [
+
+{
+	"filename": "astu/astu_102.png",
+	"frame": {"x":1348,"y":1079,"w":223,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":4,"w":223,"h":536},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "connie/connie03.png",
+	"frame": {"x":671,"y":1084,"w":226,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":226,"h":536},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "connie/connie23.png",
+	"frame": {"x":1,"y":1,"w":226,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":226,"h":540},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "connie/connie25.png",
+	"frame": {"x":1,"y":543,"w":226,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":226,"h":540},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "connie/connie28.png",
+	"frame": {"x":457,"y":543,"w":226,"h":539},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":226,"h":539},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "connie/connie30.png",
+	"frame": {"x":229,"y":1,"w":226,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":226,"h":540},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "connie/connie33.png",
+	"frame": {"x":229,"y":543,"w":226,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":226,"h":540},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "connie/connie35.png",
+	"frame": {"x":457,"y":1,"w":226,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":226,"h":540},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "kalani/kalani_111.png",
+	"frame": {"x":1135,"y":1,"w":210,"h":515},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":21,"w":210,"h":515},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "kalani/kalani_112.png",
+	"frame": {"x":1797,"y":1068,"w":218,"h":516},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":55,"y":21,"w":218,"h":516},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "maria/maria24.png",
+	"frame": {"x":1799,"y":530,"w":218,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":218,"h":536},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria25.png",
+	"frame": {"x":230,"y":1085,"w":218,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":218,"h":535},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria35.png",
+	"frame": {"x":1135,"y":539,"w":218,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":218,"h":538},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria38.png",
+	"frame": {"x":1124,"y":1081,"w":222,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":222,"h":538},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria40.png",
+	"frame": {"x":685,"y":1,"w":223,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":223,"h":538},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shavonne/shavonne_100.png",
+	"frame": {"x":685,"y":541,"w":223,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":223,"h":538},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shavonne/shavonne_103.png",
+	"frame": {"x":1355,"y":539,"w":223,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":223,"h":536},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shavonne/shavonne_105.png",
+	"frame": {"x":1574,"y":1,"w":223,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":223,"h":536},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shavonne/shavonne_108.png",
+	"frame": {"x":1348,"y":1,"w":224,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":224,"h":536},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shavonne/shavonne_112.png",
+	"frame": {"x":899,"y":1081,"w":223,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":223,"h":538},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shavonne/shavonne_114.png",
+	"frame": {"x":910,"y":1,"w":223,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":223,"h":538},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shavonne/shavonne_115.png",
+	"frame": {"x":910,"y":541,"w":223,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":223,"h":538},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "tofu/tofu25.png",
+	"frame": {"x":1799,"y":1,"w":220,"h":527},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":13,"w":220,"h":527},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "tofu/tofu33.png",
+	"frame": {"x":450,"y":1085,"w":219,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":8,"w":219,"h":532},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "tofu/tofu35.png",
+	"frame": {"x":1580,"y":539,"w":215,"h":526},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":14,"w":215,"h":526},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "tofu/tofu43.png",
+	"frame": {"x":1,"y":1085,"w":227,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":5,"w":227,"h":535},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "yosef/yosef03.png",
+	"frame": {"x":1573,"y":1077,"w":222,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":1,"w":222,"h":536},
+	"sourceSize": {"w":325,"h":540}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "all-20.png",
+	"format": "RGBA8888",
+	"size": {"w":2020,"h":1621},
+	"scale": "0.5",
+	"related_multi_packs": [ "all-0.json", "all-1.json", "all-2.json", "all-3.json", "all-4.json", "all-5.json", "all-6.json", "all-7.json", "all-8.json", "all-9.json", "all-10.json", "all-11.json", "all-12.json", "all-13.json", "all-14.json", "all-15.json", "all-16.json", "all-17.json", "all-18.json", "all-19.json", "all-21.json", "all-22.json", "all-23.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e4beacca1928381fab7a6905b400eb5d:aa1b5ff35b134096214d941b7f468273:705b564586afaaa8a6d355fbbcbf3dbe$"
+}
+}

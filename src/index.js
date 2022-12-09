@@ -44,15 +44,26 @@ const rng = splitHash(fxhash)
 // [https://fxhash.xyz/articles/guide-mint-generative-token#features]
 //
 const sheets = ['all-0', 'all-1']
+const numSheets =6//24
 const images = [
     {name: 'amina', count: 43},
     {name: 'heno', count: 50},
     {name: 'tara rose', count: 30},
+    // {name: 'aroma', count: 30},
+    // {name: 'astu', count: 30},
+    // {name: 'bemata', count: 30},
+    // {name: 'burdhaus', count: 30},
+    // {name: 'chloe', count: 30},
+    // {name: 'clear', count: 30},
+    // {name: 'connie', count: 30},
+    // {name: 'jen', count: 30},
+    // {name: 'jin', count: 30},
+    // {name: 'kalani', count: 30},
 ]
 
 const colorModeR = rand()
 const colorModes = {
-    rainbowSpectrum: 'Rainbow',
+    // rainbowSpectrum: 'Rainbow',
     normal: 'Normal'
 }
 const crowdModes = {
@@ -104,7 +115,7 @@ const settings = {
     octavesRange: rng.slice(13, 21),
     crowdMode: crowdMode,
     numDancers: getNumDancers(crowdMode),
-    colorMode: colorModeR < .1 ? colorModes.rainbowSpectrum : colorModes.normal,
+    colorMode: colorModes.normal,//colorModeR < .1 ? colorModes.rainbowSpectrum : colorModes.normal,
     // gui specific
     override: false,
     border: {h: rand() * 360, s: 0.9, v: 0.3},
@@ -179,7 +190,7 @@ const sketch = p5 => {
     let gradientShader;
     let linearGradientShader;
     p5.preload = () => {
-        const sheetsI = [...new Array(6).keys()].map(i => 'all-' + i)
+        const sheetsI = [...new Array(numSheets).keys()].map(i => 'all-' + i)
         sheets = loadMultipack(p5, sheetsI, `./packed`)
         tintShader = p5.loadShader('./shader/default.vert', './shader/tint.frag');
         naturalDeform = p5.loadShader('./shader/default.vert', './shader/naturalDeform.frag');

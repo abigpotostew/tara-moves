@@ -1,0 +1,181 @@
+{"frames": [
+
+{
+	"filename": "heno/heno08.png",
+	"frame": {"x":550,"y":1,"w":276,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":6,"w":276,"h":534},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "jin/jin20.png",
+	"frame": {"x":1,"y":1081,"w":266,"h":525},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":3,"w":266,"h":525},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "kalani/kalani_127.png",
+	"frame": {"x":269,"y":1083,"w":281,"h":519},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":18,"w":281,"h":519},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "mark/mark18.png",
+	"frame": {"x":828,"y":1,"w":275,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":275,"h":534},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "mark/mark20.png",
+	"frame": {"x":550,"y":537,"w":274,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":274,"h":534},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "mark/mark29.png",
+	"frame": {"x":277,"y":543,"w":271,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":271,"h":538},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "mark/mark38.png",
+	"frame": {"x":277,"y":1,"w":271,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":271,"h":540},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "paul/paul27.png",
+	"frame": {"x":1102,"y":537,"w":275,"h":530},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":275,"h":530},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "paul/paul32.png",
+	"frame": {"x":1105,"y":1,"w":275,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":275,"h":534},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "paul/paul34.png",
+	"frame": {"x":1382,"y":1,"w":275,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":275,"h":534},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "paul/paul39.png",
+	"frame": {"x":552,"y":1073,"w":275,"h":528},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":275,"h":528},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "paul/paul44.png",
+	"frame": {"x":1656,"y":538,"w":275,"h":529},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":275,"h":529},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "paul/paul45.png",
+	"frame": {"x":1379,"y":537,"w":275,"h":530},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":275,"h":530},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "saman/saman10.png",
+	"frame": {"x":1,"y":1,"w":274,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":0,"w":274,"h":538},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "saman/saman13.png",
+	"frame": {"x":1,"y":541,"w":274,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":0,"w":274,"h":538},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "saman/saman15.png",
+	"frame": {"x":826,"y":537,"w":274,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":6,"w":274,"h":532},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "yosef/yosef05.png",
+	"frame": {"x":1659,"y":1,"w":271,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":1,"w":271,"h":535},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "yosef/yosef10.png",
+	"frame": {"x":829,"y":1071,"w":271,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":1,"w":271,"h":535},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "yosef/yosef13.png",
+	"frame": {"x":1102,"y":1069,"w":271,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":1,"w":271,"h":535},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "yosef/yosef15.png",
+	"frame": {"x":1375,"y":1069,"w":271,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":1,"w":271,"h":535},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "yosef/yosef19.png",
+	"frame": {"x":1648,"y":1069,"w":271,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":1,"w":271,"h":535},
+	"sourceSize": {"w":325,"h":540}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "all-13.png",
+	"format": "RGBA8888",
+	"size": {"w":1932,"h":1607},
+	"scale": "0.5",
+	"related_multi_packs": [ "all-0.json", "all-1.json", "all-2.json", "all-3.json", "all-4.json", "all-5.json", "all-6.json", "all-7.json", "all-8.json", "all-9.json", "all-10.json", "all-11.json", "all-12.json", "all-14.json", "all-15.json", "all-16.json", "all-17.json", "all-18.json", "all-19.json", "all-20.json", "all-21.json", "all-22.json", "all-23.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e4beacca1928381fab7a6905b400eb5d:aa1b5ff35b134096214d941b7f468273:705b564586afaaa8a6d355fbbcbf3dbe$"
+}
+}

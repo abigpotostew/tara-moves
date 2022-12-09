@@ -1,0 +1,237 @@
+{"frames": [
+
+{
+	"filename": "bemata/bemata18.png",
+	"frame": {"x":1458,"y":1075,"w":135,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":6,"w":135,"h":534},
+	"sourceSize": {"w":150,"h":540}
+},
+{
+	"filename": "burdhaus/burdhaus39.png",
+	"frame": {"x":1279,"y":540,"w":209,"h":533},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":7,"w":209,"h":533},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "burdhaus/burdhaus40.png",
+	"frame": {"x":1067,"y":540,"w":210,"h":533},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":210,"h":533},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "jen/jen13.png",
+	"frame": {"x":646,"y":1075,"w":194,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":0,"w":194,"h":540},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "jen/jen15.png",
+	"frame": {"x":842,"y":1075,"w":194,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":0,"w":194,"h":540},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "jen/jen40.png",
+	"frame": {"x":1745,"y":1,"w":211,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":211,"h":540},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "jen/jen44.png",
+	"frame": {"x":431,"y":539,"w":210,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":210,"h":540},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "kalani/kalani_104.png",
+	"frame": {"x":1706,"y":543,"w":209,"h":516},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":21,"w":209,"h":516},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "majestic/majestic21.png",
+	"frame": {"x":218,"y":1083,"w":212,"h":530},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":0,"w":212,"h":530},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "majestic/majestic33.png",
+	"frame": {"x":879,"y":1,"w":215,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":215,"h":536},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "majestic/majestic39.png",
+	"frame": {"x":1530,"y":1,"w":213,"h":537},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":213,"h":537},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "majestic/majestic42.png",
+	"frame": {"x":1313,"y":1,"w":215,"h":533},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":215,"h":533},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria08.png",
+	"frame": {"x":1038,"y":1075,"w":207,"h":537},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":3,"w":207,"h":537},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria10.png",
+	"frame": {"x":1247,"y":1075,"w":209,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":3,"w":209,"h":536},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria13.png",
+	"frame": {"x":643,"y":537,"w":210,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":3,"w":210,"h":536},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria15.png",
+	"frame": {"x":220,"y":1,"w":217,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":217,"h":536},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria18.png",
+	"frame": {"x":439,"y":1,"w":218,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":218,"h":534},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria20.png",
+	"frame": {"x":659,"y":1,"w":218,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":218,"h":534},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "maria/maria28.png",
+	"frame": {"x":1,"y":1,"w":217,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":217,"h":538},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shido/shido_104.png",
+	"frame": {"x":1595,"y":1061,"w":201,"h":509},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":31,"w":201,"h":509},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shido/shido_108.png",
+	"frame": {"x":1798,"y":1061,"w":201,"h":502},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":38,"w":201,"h":502},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "shido/shido_122.png",
+	"frame": {"x":432,"y":1081,"w":212,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":6,"w":212,"h":534},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "tofu/tofu08.png",
+	"frame": {"x":1490,"y":540,"w":214,"h":518},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":3,"w":214,"h":518},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "tofu/tofu32.png",
+	"frame": {"x":1,"y":1083,"w":215,"h":528},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":12,"w":215,"h":528},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "tone/tone06.png",
+	"frame": {"x":1,"y":541,"w":215,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":0,"w":215,"h":540},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "tone/tone12.png",
+	"frame": {"x":1096,"y":1,"w":215,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":6,"w":215,"h":534},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "tone/tone15.png",
+	"frame": {"x":855,"y":539,"w":210,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":6,"w":210,"h":534},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "tone/tone24.png",
+	"frame": {"x":218,"y":541,"w":211,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":0,"w":211,"h":540},
+	"sourceSize": {"w":275,"h":540}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "all-21.png",
+	"format": "RGBA8888",
+	"size": {"w":2000,"h":1616},
+	"scale": "0.5",
+	"related_multi_packs": [ "all-0.json", "all-1.json", "all-2.json", "all-3.json", "all-4.json", "all-5.json", "all-6.json", "all-7.json", "all-8.json", "all-9.json", "all-10.json", "all-11.json", "all-12.json", "all-13.json", "all-14.json", "all-15.json", "all-16.json", "all-17.json", "all-18.json", "all-19.json", "all-20.json", "all-22.json", "all-23.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e4beacca1928381fab7a6905b400eb5d:aa1b5ff35b134096214d941b7f468273:705b564586afaaa8a6d355fbbcbf3dbe$"
+}
+}

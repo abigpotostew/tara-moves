@@ -1,0 +1,149 @@
+{"frames": [
+
+{
+	"filename": "burdhaus/burdhaus55.png",
+	"frame": {"x":1843,"y":543,"w":204,"h":536},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":4,"w":204,"h":536},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "chloe/chloe02.png",
+	"frame": {"x":1243,"y":1593,"w":293,"h":452},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":88,"w":293,"h":452},
+	"sourceSize": {"w":375,"h":540}
+},
+{
+	"filename": "chloe/chloe03.png",
+	"frame": {"x":918,"y":1580,"w":323,"h":462},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":78,"w":323,"h":462},
+	"sourceSize": {"w":375,"h":540}
+},
+{
+	"filename": "connie/connie38.png",
+	"frame": {"x":1819,"y":1081,"w":227,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":227,"h":540},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "jen/jen47.png",
+	"frame": {"x":1845,"y":1,"w":202,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":0,"w":202,"h":540},
+	"sourceSize": {"w":225,"h":540}
+},
+{
+	"filename": "stoney/stoney22.png",
+	"frame": {"x":924,"y":535,"w":407,"h":515},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":16,"w":407,"h":515},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney24.png",
+	"frame": {"x":462,"y":535,"w":460,"h":515},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":16,"w":460,"h":515},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "tara/tara05.png",
+	"frame": {"x":918,"y":1052,"w":448,"h":526},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":14,"w":448,"h":526},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara08.png",
+	"frame": {"x":462,"y":1067,"w":454,"h":526},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":14,"w":454,"h":526},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara10.png",
+	"frame": {"x":1368,"y":1067,"w":449,"h":524},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":16,"w":449,"h":524},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara13.png",
+	"frame": {"x":1384,"y":1,"w":459,"h":530},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":10,"w":459,"h":530},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara20.png",
+	"frame": {"x":1,"y":1,"w":459,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":8,"w":459,"h":532},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara24.png",
+	"frame": {"x":1,"y":535,"w":459,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":8,"w":459,"h":532},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara27.png",
+	"frame": {"x":1,"y":1069,"w":459,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":8,"w":459,"h":532},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara28.png",
+	"frame": {"x":462,"y":1,"w":459,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":8,"w":459,"h":532},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara30.png",
+	"frame": {"x":923,"y":1,"w":459,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":8,"w":459,"h":532},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara33.png",
+	"frame": {"x":1384,"y":533,"w":457,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":8,"w":457,"h":532},
+	"sourceSize": {"w":475,"h":540}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "all-1.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2046},
+	"scale": "0.5",
+	"related_multi_packs": [ "all-0.json", "all-2.json", "all-3.json", "all-4.json", "all-5.json", "all-6.json", "all-7.json", "all-8.json", "all-9.json", "all-10.json", "all-11.json", "all-12.json", "all-13.json", "all-14.json", "all-15.json", "all-16.json", "all-17.json", "all-18.json", "all-19.json", "all-20.json", "all-21.json", "all-22.json", "all-23.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e4beacca1928381fab7a6905b400eb5d:aa1b5ff35b134096214d941b7f468273:705b564586afaaa8a6d355fbbcbf3dbe$"
+}
+}

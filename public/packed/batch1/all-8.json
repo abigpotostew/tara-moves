@@ -1,0 +1,181 @@
+{"frames": [
+
+{
+	"filename": "bemata/bemata15.png",
+	"frame": {"x":1897,"y":1,"w":140,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":6,"w":140,"h":534},
+	"sourceSize": {"w":150,"h":540}
+},
+{
+	"filename": "heno/heno15.png",
+	"frame": {"x":1423,"y":530,"w":304,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":6,"w":304,"h":534},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "heno/heno20.png",
+	"frame": {"x":1729,"y":537,"w":304,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":6,"w":304,"h":534},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "heno/heno23.png",
+	"frame": {"x":1,"y":1054,"w":304,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":6,"w":304,"h":534},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "nafets/nafets_123.png",
+	"frame": {"x":1267,"y":1,"w":313,"h":527},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":12,"w":313,"h":527},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "nafets/nafets_128.png",
+	"frame": {"x":1582,"y":1,"w":313,"h":527},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":12,"w":313,"h":527},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "nafets/nafets_133.png",
+	"frame": {"x":1,"y":525,"w":313,"h":527},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":12,"w":313,"h":527},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "nafets/nafets_138.png",
+	"frame": {"x":1,"y":1,"w":313,"h":522},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":12,"w":313,"h":522},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "nafets/nafets_140.png",
+	"frame": {"x":316,"y":527,"w":313,"h":528},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":12,"w":313,"h":528},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "nafets/nafets_143.png",
+	"frame": {"x":631,"y":527,"w":313,"h":528},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":12,"w":313,"h":528},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "nafets/nafets_145.png",
+	"frame": {"x":946,"y":527,"w":313,"h":528},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":12,"w":313,"h":528},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "nafets/nafets_148.png",
+	"frame": {"x":307,"y":1057,"w":313,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":5,"w":313,"h":535},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "seesha/seesha_138.png",
+	"frame": {"x":316,"y":1,"w":315,"h":524},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":16,"w":315,"h":524},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "seesha/seesha_142.png",
+	"frame": {"x":633,"y":1,"w":315,"h":524},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":16,"w":315,"h":524},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "seesha/seesha_143.png",
+	"frame": {"x":950,"y":1,"w":315,"h":524},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":16,"w":315,"h":524},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "suzi/suzi_115.png",
+	"frame": {"x":796,"y":1057,"w":300,"h":540},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":540},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "suzi/suzi_119.png",
+	"frame": {"x":1098,"y":1061,"w":300,"h":540},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":540},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "suzi/suzi_122.png",
+	"frame": {"x":1400,"y":1066,"w":300,"h":540},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":540},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "suzi/suzi_124.png",
+	"frame": {"x":1702,"y":1073,"w":300,"h":540},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":540},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "tone/tone00.png",
+	"frame": {"x":1261,"y":530,"w":160,"h":529},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":45,"y":11,"w":160,"h":529},
+	"sourceSize": {"w":275,"h":540}
+},
+{
+	"filename": "tony/tony08.png",
+	"frame": {"x":622,"y":1057,"w":172,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":0,"w":172,"h":540},
+	"sourceSize": {"w":200,"h":540}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "all-8.png",
+	"format": "RGBA8888",
+	"size": {"w":2038,"h":1614},
+	"scale": "0.5",
+	"related_multi_packs": [ "all-0.json", "all-1.json", "all-2.json", "all-3.json", "all-4.json", "all-5.json", "all-6.json", "all-7.json", "all-9.json", "all-10.json", "all-11.json", "all-12.json", "all-13.json", "all-14.json", "all-15.json", "all-16.json", "all-17.json", "all-18.json", "all-19.json", "all-20.json", "all-21.json", "all-22.json", "all-23.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e4beacca1928381fab7a6905b400eb5d:aa1b5ff35b134096214d941b7f468273:705b564586afaaa8a6d355fbbcbf3dbe$"
+}
+}

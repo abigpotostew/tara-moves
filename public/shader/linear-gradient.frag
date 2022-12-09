@@ -12,18 +12,10 @@ precision mediump float;
 // ranges from 0..1
 varying vec2 vTexCoord;
 
-// Your texture uniform must use this name
 uniform vec3 color0;
 uniform vec3 color1;
 
-
-
 void main() {
-    vec2 p = vTexCoord;
-
-    // base color pattern
-
-    vec3 col = mix(color0, color1, p.x);
-
+    vec3 col = mix(color0, color1, vTexCoord.x);
     gl_FragColor = vec4(col, 1.0);
 }

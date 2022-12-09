@@ -1,0 +1,181 @@
+{"frames": [
+
+{
+	"filename": "amina/amina33.png",
+	"frame": {"x":1516,"y":1060,"w":302,"h":523},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":12,"w":302,"h":523},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "connie/connie05.png",
+	"frame": {"x":1821,"y":1,"w":226,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":226,"h":540},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "connie/connie08.png",
+	"frame": {"x":1820,"y":1085,"w":226,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":226,"h":540},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "connie/connie40.png",
+	"frame": {"x":1820,"y":543,"w":227,"h":540},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":227,"h":540},
+	"sourceSize": {"w":250,"h":540}
+},
+{
+	"filename": "heno/heno13.png",
+	"frame": {"x":307,"y":1068,"w":302,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":6,"w":302,"h":534},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "heno/heno18.png",
+	"frame": {"x":1,"y":543,"w":303,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":6,"w":303,"h":534},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "heno/heno25.png",
+	"frame": {"x":303,"y":1,"w":304,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":6,"w":304,"h":532},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "heno/heno28.png",
+	"frame": {"x":1,"y":1079,"w":304,"h":532},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":6,"w":304,"h":532},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "heno/heno32.png",
+	"frame": {"x":306,"y":535,"w":304,"h":531},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":6,"w":304,"h":531},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "ryan/ryan03.png",
+	"frame": {"x":914,"y":524,"w":308,"h":521},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":44,"y":19,"w":308,"h":521},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "ryan/ryan05.png",
+	"frame": {"x":609,"y":1,"w":309,"h":521},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":44,"y":19,"w":309,"h":521},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "saman/saman05.png",
+	"frame": {"x":1526,"y":520,"w":292,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":0,"w":292,"h":538},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "seesha/seesha_118.png",
+	"frame": {"x":1222,"y":1,"w":298,"h":521},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":19,"w":298,"h":521},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "seesha/seesha_125.png",
+	"frame": {"x":1522,"y":1,"w":297,"h":517},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":18,"w":297,"h":517},
+	"sourceSize": {"w":325,"h":540}
+},
+{
+	"filename": "suzi/suzi_109.png",
+	"frame": {"x":1224,"y":524,"w":300,"h":514},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":26,"w":300,"h":514},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "suzi/suzi_110.png",
+	"frame": {"x":920,"y":1,"w":300,"h":521},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":19,"w":300,"h":521},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "suzi/suzi_113.png",
+	"frame": {"x":611,"y":1068,"w":300,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":300,"h":535},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "suzi/suzi_127.png",
+	"frame": {"x":1,"y":1,"w":300,"h":540},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":540},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "suzi/suzi_129.png",
+	"frame": {"x":612,"y":524,"w":300,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":300,"h":535},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "suzi/suzi_130.png",
+	"frame": {"x":913,"y":1061,"w":300,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":5,"w":300,"h":535},
+	"sourceSize": {"w":300,"h":540}
+},
+{
+	"filename": "tara rose/tara rose13.png",
+	"frame": {"x":1215,"y":1047,"w":299,"h":529},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":0,"w":299,"h":529},
+	"sourceSize": {"w":350,"h":540}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "all-9.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":1626},
+	"scale": "0.5",
+	"related_multi_packs": [ "all-0.json", "all-1.json", "all-2.json", "all-3.json", "all-4.json", "all-5.json", "all-6.json", "all-7.json", "all-8.json", "all-10.json", "all-11.json", "all-12.json", "all-13.json", "all-14.json", "all-15.json", "all-16.json", "all-17.json", "all-18.json", "all-19.json", "all-20.json", "all-21.json", "all-22.json", "all-23.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e4beacca1928381fab7a6905b400eb5d:aa1b5ff35b134096214d941b7f468273:705b564586afaaa8a6d355fbbcbf3dbe$"
+}
+}

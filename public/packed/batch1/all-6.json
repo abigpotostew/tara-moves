@@ -1,0 +1,157 @@
+{"frames": [
+
+{
+	"filename": "aroma/aroma_102.png",
+	"frame": {"x":342,"y":1082,"w":341,"h":496},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":42,"w":341,"h":496},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "aroma/aroma_103.png",
+	"frame": {"x":1,"y":1083,"w":339,"h":501},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":37,"w":339,"h":501},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "aroma/aroma_105.png",
+	"frame": {"x":1680,"y":524,"w":339,"h":515},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":23,"w":339,"h":515},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "aroma/aroma_110.png",
+	"frame": {"x":657,"y":541,"w":339,"h":535},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":5,"w":339,"h":535},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "chloe/chloe08.png",
+	"frame": {"x":1328,"y":1,"w":345,"h":524},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":16,"w":345,"h":524},
+	"sourceSize": {"w":375,"h":540}
+},
+{
+	"filename": "chloe/chloe18.png",
+	"frame": {"x":685,"y":1078,"w":337,"h":496},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":44,"w":337,"h":496},
+	"sourceSize": {"w":375,"h":540}
+},
+{
+	"filename": "heno/heno33.png",
+	"frame": {"x":998,"y":534,"w":326,"h":531},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":6,"w":326,"h":531},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "heno/heno43.png",
+	"frame": {"x":667,"y":1,"w":331,"h":531},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":6,"w":331,"h":531},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "heno/heno47.png",
+	"frame": {"x":1000,"y":1,"w":326,"h":529},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":6,"w":326,"h":529},
+	"sourceSize": {"w":350,"h":540}
+},
+{
+	"filename": "loren/loren05.png",
+	"frame": {"x":1379,"y":1060,"w":351,"h":520},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":16,"w":351,"h":520},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "loren/loren13.png",
+	"frame": {"x":1326,"y":532,"w":352,"h":526},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":12,"w":352,"h":526},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "ryan/ryan23.png",
+	"frame": {"x":1024,"y":1067,"w":353,"h":522},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":18,"w":353,"h":522},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "ryan/ryan28.png",
+	"frame": {"x":1675,"y":1,"w":353,"h":521},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":19,"w":353,"h":521},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "saman/saman19.png",
+	"frame": {"x":340,"y":1,"w":325,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":0,"w":325,"h":538},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "saman/saman22.png",
+	"frame": {"x":327,"y":542,"w":328,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":0,"w":328,"h":538},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "saman/saman23.png",
+	"frame": {"x":1,"y":1,"w":337,"h":539},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":0,"w":337,"h":539},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "saman/saman25.png",
+	"frame": {"x":1,"y":542,"w":324,"h":539},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":0,"w":324,"h":539},
+	"sourceSize": {"w":400,"h":540}
+},
+{
+	"filename": "suzi/suzi_107.png",
+	"frame": {"x":1732,"y":1041,"w":279,"h":494},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":46,"w":279,"h":494},
+	"sourceSize": {"w":300,"h":540}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "all-6.png",
+	"format": "RGBA8888",
+	"size": {"w":2029,"h":1590},
+	"scale": "0.5",
+	"related_multi_packs": [ "all-0.json", "all-1.json", "all-2.json", "all-3.json", "all-4.json", "all-5.json", "all-7.json", "all-8.json", "all-9.json", "all-10.json", "all-11.json", "all-12.json", "all-13.json", "all-14.json", "all-15.json", "all-16.json", "all-17.json", "all-18.json", "all-19.json", "all-20.json", "all-21.json", "all-22.json", "all-23.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e4beacca1928381fab7a6905b400eb5d:aa1b5ff35b134096214d941b7f468273:705b564586afaaa8a6d355fbbcbf3dbe$"
+}
+}

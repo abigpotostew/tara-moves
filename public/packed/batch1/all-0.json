@@ -1,0 +1,117 @@
+{"frames": [
+
+{
+	"filename": "bemata/bemata09.png",
+	"frame": {"x":963,"y":1066,"w":140,"h":534},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":6,"w":140,"h":534},
+	"sourceSize": {"w":150,"h":540}
+},
+{
+	"filename": "stoney/stoney53.png",
+	"frame": {"x":1,"y":1,"w":479,"h":524},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":479,"h":524},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney55.png",
+	"frame": {"x":482,"y":1,"w":479,"h":524},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":479,"h":524},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney58.png",
+	"frame": {"x":963,"y":533,"w":500,"h":531},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":500,"h":531},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney60.png",
+	"frame": {"x":482,"y":527,"w":479,"h":531},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":479,"h":531},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney63.png",
+	"frame": {"x":1465,"y":533,"w":479,"h":531},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":479,"h":531},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney65.png",
+	"frame": {"x":1,"y":1059,"w":479,"h":531},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":479,"h":531},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney68.png",
+	"frame": {"x":482,"y":1060,"w":479,"h":531},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":479,"h":531},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney70.png",
+	"frame": {"x":963,"y":1,"w":479,"h":530},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":479,"h":530},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney73.png",
+	"frame": {"x":1444,"y":1,"w":479,"h":530},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":479,"h":530},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "stoney/stoney75.png",
+	"frame": {"x":1,"y":527,"w":479,"h":530},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":479,"h":530},
+	"sourceSize": {"w":500,"h":540}
+},
+{
+	"filename": "tara/tara17.png",
+	"frame": {"x":1105,"y":1066,"w":459,"h":537},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":3,"w":459,"h":537},
+	"sourceSize": {"w":475,"h":540}
+},
+{
+	"filename": "tara/tara18.png",
+	"frame": {"x":1566,"y":1066,"w":458,"h":538},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":2,"w":458,"h":538},
+	"sourceSize": {"w":475,"h":540}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "all-0.png",
+	"format": "RGBA8888",
+	"size": {"w":2025,"h":1605},
+	"scale": "0.5",
+	"related_multi_packs": [ "all-1.json", "all-2.json", "all-3.json", "all-4.json", "all-5.json", "all-6.json", "all-7.json", "all-8.json", "all-9.json", "all-10.json", "all-11.json", "all-12.json", "all-13.json", "all-14.json", "all-15.json", "all-16.json", "all-17.json", "all-18.json", "all-19.json", "all-20.json", "all-21.json", "all-22.json", "all-23.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e4beacca1928381fab7a6905b400eb5d:aa1b5ff35b134096214d941b7f468273:705b564586afaaa8a6d355fbbcbf3dbe$"
+}
+}
